@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/commons-digester-2.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.8.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="lib/ganymed-ssh2-build210.jar"/>
+	<classpathentry kind="lib" path="lib/chardet.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

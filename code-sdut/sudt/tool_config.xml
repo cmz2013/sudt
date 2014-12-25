@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolConfig>
+	<!-- 
+	 concurrent: positive integer. default: 2 
+	 maxDelay: positive integer,unit: second. default: 60 
+	 retry: failure to retry
+	 sshEncode: ssh encode. default: UTF-8
+	 timeOut: positive integer. default: 1. Unit: minutes
+	-->
+	<deployConfig concurrent="2" 
+				  maxDelay="60"
+				  retry="false"
+				  sshEncode="UTF-8"
+				  timeOut="1"
+	/>
+	
+	<!-- language: en/cn, if null depends on the OS 
+	 closeAdd: Complete to add, then close the dialog 
+	 closeUpdate: Complete to update, then close the dialog 
+	 displayPassword:Password box shows the password
+	 defaultUser:The host user name
+	-->
+	<userConfig language="en"
+				defaultUser="root" 
+				closeUpdate="true"
+				closeAdd="true" 
+				showPassword="false"
+	/>
+</toolConfig>

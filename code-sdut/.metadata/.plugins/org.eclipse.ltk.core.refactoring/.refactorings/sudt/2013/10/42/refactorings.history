@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;sudt&apos;&#x0D;&#x0A;- Original project: &apos;sudt&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     deploy_2.2.2.2.log&#x0D;&#x0A;     deploy_3.3.3.3.log" description="Delete elements" element1="log/deploy_2.2.2.2.log" element2="log/deploy_3.3.3.3.log" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1381719066008" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,25 @@
+1379233639673	Rename type 'TitlePanel'
+1379234343340	Rename type 'HelpTab'
+1379234455310	Rename type 'DeployTab'
+1379234467151	Rename type 'ToolHelpTab'
+1379234492496	Rename type 'ToolConst'
+1379234552035	Rename type 'IconContaine'
+1379234611220	Rename type 'ToolHelpTabbed'
+1379254939110	Delete element
+1379254991902	Rename package 'cn.tool.ui.res'
+1379255228679	Rename package 'cn.tool.ui.tab'
+1379255291984	Rename package 'cn.tool.ui.tabbed'
+1379257603937	Delete element
+1379260842850	Delete element
+1379262201521	Rename resource 'cluster_conf.png'
+1379335079429	Delete element
+1379335122813	Delete element
+1379336079517	Delete elements
+1379569433725	Delete element
+1379649269289	Extract method 'delay'
+1379687970447	Delete element
+1379688632355	Delete element
+1379688919401	Delete element
+1379755759795	Rename type 'Executor'
+1379756330076	Rename type 'ConcurrentController'
+1379766547215	Delete element

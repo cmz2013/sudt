@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<digester-rules>
+	<pattern value="toolConfig">
+		<pattern value="deployConfig">
+			<object-create-rule classname="cn.tool.config.DeplogConfig" />
+			<set-properties-rule />
+			<set-next-rule methodname="setDeployConfig"/>
+		</pattern>
+		<pattern value="userConfig">
+			<object-create-rule classname="cn.tool.config.UserConfig" />
+			<set-properties-rule />
+			<set-next-rule methodname="setUserConfig"/>
+		</pattern>
+	</pattern>
+</digester-rules>  
