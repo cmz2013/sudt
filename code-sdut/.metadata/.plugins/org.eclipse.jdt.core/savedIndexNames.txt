@@ -18,6 +18,5 @@ INDEX VERSION 1.126+D:\Work\opensource\sudt\code-sdut\.metadata\.plugins\org.ecl
 1297408420.index
 339296643.index
 1322554331.index
-1183345560.index
 2806335881.index
 1643571442.index

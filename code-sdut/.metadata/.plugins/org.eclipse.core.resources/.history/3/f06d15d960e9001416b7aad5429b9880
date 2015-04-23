@@ -48,7 +48,7 @@ public class DeployManager extends Thread {
 		
 		for (int i = 0; i < deployScheme.getHostList().size(); i++) {
 			HostInfo hostInfo = deployScheme.getHostList().get(i);
-			logName.add(hostInfo.getIp() + "_" + hostInfo.getPort() + ".log");
+			logName.add("deploy_" + hostInfo.getIp() + ".log");
 		}
 		
 		Log4jConfig.initLogConfig(configPath, true, 
