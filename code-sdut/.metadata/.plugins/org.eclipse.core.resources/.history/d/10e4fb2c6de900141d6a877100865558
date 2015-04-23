@@ -47,14 +47,6 @@ public class UserConfig {
 		this.defaultUser = defaultUser;
 	}
 	
-	public String getDefaultPort() {
-		return defaultPort;
-	}
-
-	public void setDefaultPort(String defaultPort) {
-		this.defaultPort = defaultPort;
-	}
-
 	public boolean isCloseUpdate() {
 		return closeUpdate;
 	}

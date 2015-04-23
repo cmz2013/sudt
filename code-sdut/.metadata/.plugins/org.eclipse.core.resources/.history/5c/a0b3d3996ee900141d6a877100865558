@@ -31,7 +31,6 @@ public class HostAddDialog extends AbstractHostDialog {
 		ipField.setText("");
 		portField.setText("");
 		userField.setText(ToolConfig.user.getDefaultUser());
-		portField.setText(ToolConfig.user.getDefaultPort());
 		pasField.setText("");
 		ipField.requestFocus();
 	}

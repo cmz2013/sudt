@@ -21,8 +21,7 @@
 	 defaultUser:The host user name
 	-->
 	<userConfig language=""
-				defaultUser="root"
-				defaultPort="22"
+				defaultUser="root" 
 				closeUpdate="true"
 				closeAdd="true" 
 				showPassword="false"

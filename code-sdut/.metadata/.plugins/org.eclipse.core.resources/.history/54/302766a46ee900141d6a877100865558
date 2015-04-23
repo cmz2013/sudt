@@ -9,7 +9,7 @@ public class UserConfig {
 	/**
 	 * 默认用户名
 	 */
-	private String defaultUser = "root";
+//	private String defaultUser = "root";
 	/**
 	 * 默认端口
 	 */
@@ -39,13 +39,13 @@ public class UserConfig {
 		return language;
 	}
 	
-	public String getDefaultUser() {
-		return defaultUser;
-	}
+//	public String getDefaultUser() {
+//		return defaultUser;
+//	}
 	
-	public void setDefaultUser(String defaultUser) {
-		this.defaultUser = defaultUser;
-	}
+//	public void setDefaultUser(String defaultUser) {
+//		this.defaultUser = defaultUser;
+//	}
 	
 	public String getDefaultPort() {
 		return defaultPort;

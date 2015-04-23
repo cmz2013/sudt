@@ -11,10 +11,6 @@ public class UserConfig {
 	 */
 	private String defaultUser = "root";
 	/**
-	 * 默认端口
-	 */
-	private String defaultPort = "22";
-	/**
 	 * 完成更新后关闭对话框
 	 */
 	private boolean closeUpdate = true;
@@ -47,14 +43,6 @@ public class UserConfig {
 		this.defaultUser = defaultUser;
 	}
 	
-	public String getDefaultPort() {
-		return defaultPort;
-	}
-
-	public void setDefaultPort(String defaultPort) {
-		this.defaultPort = defaultPort;
-	}
-
 	public boolean isCloseUpdate() {
 		return closeUpdate;
 	}

@@ -9,7 +9,7 @@ public class UserConfig {
 	/**
 	 * 默认用户名
 	 */
-	private String defaultUser = "root";
+//	private String defaultUser = "root";
 	/**
 	 * 默认端口
 	 */

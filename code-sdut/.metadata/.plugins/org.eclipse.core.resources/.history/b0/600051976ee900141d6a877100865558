@@ -23,7 +23,6 @@ public class HostAddDialog extends AbstractHostDialog {
 			"soft.deploy.tool.host.list.add", hostPanel.getTable());
 		this.hostPanel = hostPanel;
 		userField.setText(ToolConfig.user.getDefaultUser());
-		portField.setText(ToolConfig.user.getDefaultPort());
 	}
 
 	@Override
@@ -31,7 +30,6 @@ public class HostAddDialog extends AbstractHostDialog {
 		ipField.setText("");
 		portField.setText("");
 		userField.setText(ToolConfig.user.getDefaultUser());
-		portField.setText(ToolConfig.user.getDefaultPort());
 		pasField.setText("");
 		ipField.requestFocus();
 	}
