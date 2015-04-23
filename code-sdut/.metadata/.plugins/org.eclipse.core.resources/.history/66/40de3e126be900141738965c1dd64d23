@@ -70,10 +70,9 @@ public class HostAddDialog extends AbstractHostDialog {
 				updateRow = i;
 				int option = JOptionPane.showConfirmDialog(null, 
 						String.format(ToolConfig.i18.getProperty(
-							"soft.deploy.tool.host.list.add.exist"), ip, port), 
+							"soft.deploy.tool.host.list.add.exist"), ip), 
 						ToolConfig.i18.getProperty("soft.deploy.tool.confirm"), 
 						JOptionPane.WARNING_MESSAGE);
-				
 				if (JOptionPane.OK_OPTION == option) {
 					setDialogType(SystemConst.DIALOG_UPDATE);
 					return true;

@@ -64,16 +64,13 @@ public class HostAddDialog extends AbstractHostDialog {
 		String port = portField.getText().trim();
 		
 		for (int i = 0; i < hostList.getRowCount(); i++) {
-			if (hostList.getValueAt(i, 0).equals(ip) &&
-					hostList.getValueAt(i, 1).equals(port)) {
-				
+			if (hostList.getValueAt(i, 0).equals(ip)) {
 				updateRow = i;
 				int option = JOptionPane.showConfirmDialog(null, 
 						String.format(ToolConfig.i18.getProperty(
-							"soft.deploy.tool.host.list.add.exist"), ip, port), 
+							"soft.deploy.tool.host.list.add.exist"), ip), 
 						ToolConfig.i18.getProperty("soft.deploy.tool.confirm"), 
 						JOptionPane.WARNING_MESSAGE);
-				
 				if (JOptionPane.OK_OPTION == option) {
 					setDialogType(SystemConst.DIALOG_UPDATE);
 					return true;

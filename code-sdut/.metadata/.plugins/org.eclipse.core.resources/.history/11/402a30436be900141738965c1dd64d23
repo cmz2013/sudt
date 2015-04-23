@@ -34,7 +34,7 @@ soft.deploy.tool.unit.second=\u79d2
 
 soft.deploy.tool.host.list=\u4e3b\u673a
 soft.deploy.tool.host.list.add=\u6dfb\u52a0\u4e3b\u673a
-soft.deploy.tool.host.list.add.exist=\u4e3b\u673a%s:%s\u5df2\u5b58\u5728\uff0c\u786e\u5b9e\u8981\u4fee\u6539\u5417\uff1f
+soft.deploy.tool.host.list.add.exist=\u4e3b\u673a%s\u5df2\u5b58\u5728\uff0c\u786e\u5b9e\u8981\u4fee\u6539\u5417\uff1f
 soft.deploy.tool.host.list.update.exist=\u4e3b\u673a%s\u5df2\u5b58\u5728
 soft.deploy.tool.host.list.update=\u4fee\u6539\u4e3b\u673a
 soft.deploy.tool.host.list.delete=\u786e\u5b9e\u8981\u5220\u9664\u4e3b\u673a\uff1a%s\uff1f
