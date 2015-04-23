@@ -13,8 +13,8 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 import cn.tool.config.ToolConfig;
-import cn.tool.lang.swing.ComFactory;
-import cn.tool.shell.LocalShellRunner;
+import cn.tool.lang.swing.SwingFactory;
+import cn.tool.shell.LocalShellExcutor;
 import cn.tool.ui.resour.IconContainer;
 import cn.tool.ui.resour.SystemConst;
 /**
@@ -28,7 +28,7 @@ public class BottomlPanel extends JPanel {
 	/**
 	 * 日志文件夹按钮
 	 */
-	private JMenuItem logView = ComFactory.getMenuItem(
+	private JMenuItem logView = SwingFactory.getMenuItem(
 			"soft.deploy.tool.log", IconContainer.icon_log);
 	/**
 	 * 任务栏标签
@@ -58,7 +58,7 @@ public class BottomlPanel extends JPanel {
 						logFile.mkdirs();
 					}
 				
-					LocalShellRunner.execute(
+					LocalShellExcutor.execute(
 							"start " + ToolConfig.LOG_DIR);
 				} catch (Exception ex) {
 					JOptionPane.showMessageDialog(null, 

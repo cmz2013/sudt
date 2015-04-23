@@ -2,29 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="273" key="DIALOG_WIDTH"/>
-		<item value="384" key="DIALOG_Y_ORIGIN"/>
+		<item value="352" key="DIALOG_Y_ORIGIN"/>
+		<item value="756" key="DIALOG_X_ORIGIN"/>
 		<item value="384" key="DIALOG_HEIGHT"/>
-		<item value="860" key="DIALOG_X_ORIGIN"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Pause" key="selection"/>
+		<item value="table" key="selection"/>
 		<list key="findhistory">
-			<item value="pause"/>
+			<item value="table"/>
+			<item value="ipLabel"/>
+			<item value="ipField"/>
+			<item value="soft.deploy.tool.host.ip.unused"/>
+			<item value="splitIpToArray"/>
+			<item value="static "/>
+			<item value="labelMap"/>
 			<item value="getDataModels"/>
-			<item value="getTextBoxDataModels"/>
-			<item value="sureExecute"/>
-			<item value="setMouseListener"/>
-			<item value="InfoClearThread"/>
-			<item value="setDataModels"/>
-			<item value="setSureBtnActionListener"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="pop-up"/>
 			<item value="&quot;"/>
 			<item value="treeIndex.put"/>
@@ -32,7 +33,6 @@
 			<item value=","/>
 			<item value=":"/>
 			<item value="."/>
-			<item value=""/>
 		</list>
 	</section>
 </section>

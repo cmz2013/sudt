@@ -19,7 +19,7 @@ import javax.swing.SwingConstants;
 import javax.swing.text.JTextComponent;
 
 import cn.tool.config.ToolConfig;
-import cn.tool.lang.swing.ComFactory;
+import cn.tool.lang.swing.SwingFactory;
 import cn.tool.ui.resour.SystemConst;
 import cn.tool.validate.annotation.Validations;
 /**
@@ -39,13 +39,13 @@ public abstract class FileStreamDialog extends AbstractDialog {
 			"soft.deploy.tool.file.path") + " ");
 	@Validations(type=Validations.Type.text, regular = ".+", info = 
 			"soft.deploy.tool.file.path.null", getInfoLabel = "getFileLabel")
-	protected JTextField filePathField = ComFactory.getTextField();
+	protected JTextField filePathField = SwingFactory.getTextField();
 	
 	@Validations(type=Validations.Type.text, regular = ".+", info = 
 			"soft.deploy.tool.password.null", getInfoLabel = "getPasLabel")
 	protected JTextComponent passwordField;
 	
-	protected JButton browseBtn = ComFactory.getButton(
+	protected JButton browseBtn = SwingFactory.getButton(
 			"soft.deploy.tool.file.browse");
 	
 	protected JCheckBox encryptCheckBox = new JCheckBox();
@@ -53,7 +53,7 @@ public abstract class FileStreamDialog extends AbstractDialog {
 	protected JPanel contextPanel = new JPanel();
 	protected JPanel labelPanel = new JPanel();
 	
-	private JFileChooser fileChooser = ComFactory.getFileChooser();
+	private JFileChooser fileChooser = SwingFactory.getFileChooser();
 	
 	public FileStreamDialog(int dialogType) {
 		super(dialogType);
@@ -65,7 +65,7 @@ public abstract class FileStreamDialog extends AbstractDialog {
 	protected void init() {
 		filePathField.setColumns(SystemConst.TEXT_FIELD_COLUMNS - 6);
 		if (ToolConfig.user.isShowPassword()) {
-			passwordField = ComFactory.getTextField();
+			passwordField = SwingFactory.getTextField();
 			if (passwordField instanceof JTextField) {
 				JTextField textField = (JTextField) passwordField;
 				textField.setColumns(SystemConst.TEXT_FIELD_COLUMNS - 6);

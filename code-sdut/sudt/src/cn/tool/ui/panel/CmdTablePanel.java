@@ -10,7 +10,7 @@ import javax.swing.JButton;
 
 import cn.tool.config.ToolConfig;
 import cn.tool.deploy.scheme.CommandLine;
-import cn.tool.lang.swing.ComFactory;
+import cn.tool.lang.swing.SwingFactory;
 import cn.tool.lang.swing.TableUtils;
 import cn.tool.ui.dialog.CmdAddDialog;
 import cn.tool.ui.dialog.CmdExportDialog;
@@ -33,19 +33,19 @@ public abstract class CmdTablePanel extends TablePanel {
 	private CmdExportDialog cmdExportDialog = null;
 	private CmdImportDialog cmdImportDialog = null;
 	
-	private JButton cmdInsertBtn = ComFactory.getButton(
+	private JButton cmdInsertBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.insert", IconContainer.icon_insert);
-	private JButton cmdImportBtn = ComFactory.getButton(
+	private JButton cmdImportBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.import", IconContainer.icon_import);
-	private JButton cmdExportBtn = ComFactory.getButton(
+	private JButton cmdExportBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.export", IconContainer.icon_export);
-	private JButton cmdUpBtn = ComFactory.getButton(
+	private JButton cmdUpBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.up", IconContainer.icon_up);
-	private JButton cmdDownBtn = ComFactory.getButton(
+	private JButton cmdDownBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.down", IconContainer.icon_down);
-	private JButton cmdExeBtn = ComFactory.getButton(
+	private JButton cmdExeBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.execute", IconContainer.icon_execute);
-	private JButton cmdStopBtn = ComFactory.getButton(
+	private JButton cmdStopBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.stop", IconContainer.icon_stop);
 	
 	public CmdTablePanel() {

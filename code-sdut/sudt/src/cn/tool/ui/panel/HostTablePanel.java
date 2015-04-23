@@ -11,7 +11,7 @@ import javax.swing.JButton;
 import javax.swing.table.DefaultTableModel;
 
 import cn.tool.deploy.scheme.HostInfo;
-import cn.tool.lang.swing.ComFactory;
+import cn.tool.lang.swing.SwingFactory;
 import cn.tool.lang.swing.TableUtils;
 import cn.tool.ui.dialog.HostAddDialog;
 import cn.tool.ui.dialog.HostExportDialog;
@@ -32,9 +32,9 @@ public class HostTablePanel extends TablePanel {
 	private HostExportDialog hostExportDialog = null;
 	private HostImportDialog hostImportDialog = null;
 	
-	private JButton hostExportBtn = ComFactory.getButton(
+	private JButton hostExportBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.export", IconContainer.icon_export);
-	private JButton hostImportBtn = ComFactory.getButton(
+	private JButton hostImportBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.import", IconContainer.icon_import);
 	
 	public HostTablePanel(DefaultTableModel model) {
@@ -128,8 +128,9 @@ public class HostTablePanel extends TablePanel {
 		for (int row = 0; row < getTable().getRowCount(); row++) {
 			hosts.add(new HostInfo(
 				(String)getTable().getValueAt(row, 0), 
-				(String)getTable().getValueAt(row, 1), 
-				(String)getTable().getValueAt(row, 2)));
+				Integer.parseInt(getTable().getValueAt(row, 1) + ""),
+				(String)getTable().getValueAt(row, 2), 
+				(String)getTable().getValueAt(row, 3)));
 		}
 		return hosts;
 	}

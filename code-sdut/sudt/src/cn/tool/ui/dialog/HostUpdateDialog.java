@@ -2,7 +2,6 @@ package cn.tool.ui.dialog;
 
 import java.awt.Color;
 
-import javax.swing.JDialog;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
@@ -18,6 +17,7 @@ import cn.tool.ui.resour.SystemConst;
 */
 @SuppressWarnings("serial")
 public class HostUpdateDialog extends AbstractHostDialog {
+	
 	public HostUpdateDialog(JTable hostList) {
 		super(SystemConst.DIALOG_UPDATE, "soft.deploy.tool.host.list.update", hostList);
 		initDialogData();
@@ -27,8 +27,9 @@ public class HostUpdateDialog extends AbstractHostDialog {
 		int selRow = hostList.getSelectedRow();
 		DefaultTableModel tableModel = (DefaultTableModel) hostList.getModel();
 		this.ipField.setText((String) tableModel.getValueAt(selRow, 0));
-		this.userField.setText((String) tableModel.getValueAt(selRow, 1));
-		this.pasField.setText((String) tableModel.getValueAt(selRow, 2));
+		this.portField.setText((String) tableModel.getValueAt(selRow, 1));
+		this.userField.setText((String) tableModel.getValueAt(selRow, 2));
+		this.pasField.setText((String) tableModel.getValueAt(selRow, 3));
 	}
 
 	@Override
@@ -41,13 +42,14 @@ public class HostUpdateDialog extends AbstractHostDialog {
 		TableUtils.updateRow(hostList, 
 				hostList.getSelectedRow(), 
 				ipField.getText(), 
+				portField.getText(),
 				userField.getText(), 
 				pasField.getText());
 		return null;
 	}
 
 	@Override
-	protected JDialog getDialog() {
+	public AbstractDialog getDialog() {
 		return this;
 	}
 

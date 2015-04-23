@@ -4,8 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JDialog;
-
 import org.apache.commons.lang.StringUtils;
 
 import cn.tool.config.ToolConfig;
@@ -106,14 +104,14 @@ public class HostImportDialog extends FileInputDialog {
 		for (String host : hosts) {
 			String[] args = host.split("\n");
 			HostInfo hostInfo = new HostInfo(
-				args[0], args[1], args[2]);
+				args[0], Integer.parseInt(args[1]), args[2], args[3]);
 			objs.add(hostInfo);
 		}
 		return objs;
 	}
 
 	@Override
-	protected JDialog getDialog() {
+	public AbstractDialog getDialog() {
 		return this;
 	}
 

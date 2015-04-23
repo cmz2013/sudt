@@ -1,7 +1,5 @@
 package cn.tool.ui.dialog;
 
-import javax.swing.JDialog;
-
 import cn.tool.config.ToolConfig;
 import cn.tool.lang.swing.TableUtils;
 import cn.tool.ui.panel.CmdTablePanel;
@@ -31,7 +29,7 @@ public class CmdAddDialog extends AbstractCmdDialog {
 	}
 	
 	@Override
-	protected JDialog getDialog() {
+	public AbstractDialog getDialog() {
 		return this;
 	}
 

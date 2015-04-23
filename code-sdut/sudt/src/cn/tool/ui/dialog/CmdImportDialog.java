@@ -4,8 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JDialog;
-
 import org.apache.commons.lang.StringUtils;
 
 import cn.tool.config.ToolConfig;
@@ -79,7 +77,7 @@ public class CmdImportDialog extends FileInputDialog {
 	}
 
 	@Override
-	protected JDialog getDialog() {
+	public AbstractDialog getDialog() {
 		return this;
 	}
 }

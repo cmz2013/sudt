@@ -33,7 +33,7 @@ public class DeployTabbed {
 	
 	private BottomlPanel bottomPanel = new BottomlPanel();
 	private HostTablePanel hostTablePanel = new HostTablePanel(TableUtils.getDefaultTableModel(
-			ToolConfig.i18.getProperty("soft.deploy.tool.host.list"), "", ""));
+			ToolConfig.i18.getProperty("soft.deploy.tool.host.list"), "", "", ""));
 	private ConsoleFrame console = null;
 	
 	@SuppressWarnings("serial")

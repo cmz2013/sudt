@@ -1,6 +1,5 @@
 package cn.tool.ui.dialog;
 
-import javax.swing.JDialog;
 import javax.swing.table.DefaultTableModel;
 
 import cn.tool.lang.swing.TableUtils;
@@ -40,7 +39,7 @@ public class CmdUpdateDialog extends AbstractCmdDialog {
 	}
 	
 	@Override
-	protected JDialog getDialog() {
+	public AbstractDialog getDialog() {
 		return this;
 	}
 

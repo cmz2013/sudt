@@ -16,16 +16,16 @@ import java.util.List;
  */
 
 public class Ipv4Utils {
-	public static String IP_ERROR = "IP address error: ";
-	public static String MASK_ERROR = "Mask error: ";
-	public static String IPV4_MODE = "%s.%s.%s.%s";
+	private String IP_ERROR = "IP address error: ";
+	private String MASK_ERROR = "Mask error: ";
+	private String IPV4_MODE = "%s.%s.%s.%s";
 	
 	/**
 	 * 判断是否为127IP
 	 * @param pre
 	 * @return
 	 */
-	private static boolean is127Ip(long pre) {
+	private boolean is127Ip(long pre) {
 		if (127l != pre) {
 			return false;
 		} 
@@ -37,7 +37,7 @@ public class Ipv4Utils {
 	 * @param pre
 	 * @return
 	 */
-	private static boolean is255Ip(long pre) {
+	private boolean is255Ip(long pre) {
 		if (255l != pre) {
 			return false;
 		} 
@@ -49,7 +49,7 @@ public class Ipv4Utils {
 	 * @param arr
 	 * @return
 	 */
-	private static boolean isZeroIp(long pre) {
+	private boolean isZeroIp(long pre) {
 		if (0l != pre) {
 			return false;
 		}
@@ -64,7 +64,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws Exception 
 	 */
-	private static boolean isNetOrBroadIp(long[] ip, int maskOneDigit) throws Exception{
+	private boolean isNetOrBroadIp(long[] ip, int maskOneDigit) throws Exception{
 		long ipLong = ipToLong(ip);
 		long ipNum = ipCount(maskOneDigit);
 		long maskLong = maskToLong(maskOneDigit);
@@ -83,7 +83,7 @@ public class Ipv4Utils {
 	 * @param binaryStr
 	 * @return
 	 */
-	private static long binaryToLong(String binaryStr) {
+	private long binaryToLong(String binaryStr) {
 		long res = 0;
 		for (int i = 8 - binaryStr.length(); i < 8; i++) {
 			res += Math.pow(2, i);
@@ -96,7 +96,7 @@ public class Ipv4Utils {
 	 * 
 	 * @param maskOneDigit:掩码1的位数
 	 */
-	public static boolean checkMask(int maskOneDigit) {
+	public boolean checkMask(int maskOneDigit) {
 		if (maskOneDigit < 0 || maskOneDigit > 32) {
 			return false;
 		} else {
@@ -110,7 +110,7 @@ public class Ipv4Utils {
 	 * @param ip
 	 * @return
 	 */
-	public static boolean checkIpFormat(String ip)  {
+	public boolean checkIpFormat(String ip)  {
 		try {
 			splitIpToArray(ip);
 		} catch (Exception e) {
@@ -125,7 +125,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws Exception
 	 */
-	public static boolean isHostIP(String ip)  throws Exception {
+	public boolean isHostIP(String ip) throws Exception {
 		long[] arr = null;
 		try {
 			arr = splitIpToArray(ip);
@@ -148,7 +148,7 @@ public class Ipv4Utils {
 	 * @throws Exception
 	 * 	
 	 */
-	public static boolean isHostIP(String ip, String mask) throws Exception {
+	public boolean isHostIP(String ip, String mask) throws Exception {
 		int maskOneDigit = getMaskOneDigit(mask);
 		return isHostIP(ip, maskOneDigit);
 	}
@@ -163,7 +163,7 @@ public class Ipv4Utils {
 	 * @throws Exception
 	 * 	
 	 */
-	public static boolean isHostIP(String ip, int maskOneDigit) throws Exception {
+	public boolean isHostIP(String ip, int maskOneDigit) throws Exception {
 		if(!checkMask(maskOneDigit)) {
 			throw new Exception(MASK_ERROR + maskOneDigit + " not in [0-32]");
 		}
@@ -188,7 +188,7 @@ public class Ipv4Utils {
 	 * @param ip: eg 192.168.1.1
 	 * @return: eg 192.168.001.001
 	 */
-	public static String formatIp(String ip) {
+	public String formatIp(String ip) {
 		String[] ips = ip.split("\\.");
 		StringBuffer newip = new StringBuffer();
 		for (int i = 0; i < ips.length; i++) {
@@ -215,7 +215,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws Exception 
 	 */
-	public static boolean isNetOrBroadIp(String ip, int maskOneDigit) throws Exception{
+	public boolean isNetOrBroadIp(String ip, int maskOneDigit) throws Exception{
 		try {
 			return isNetOrBroadIp(splitIpToArray(ip), maskOneDigit);
 		} catch (Exception e) {
@@ -228,7 +228,7 @@ public class Ipv4Utils {
 	 * @param mask1Num:掩码1的位数
 	 * @return
 	 */
-	public static long maskToLong(int maskOneDigit) {
+	public long maskToLong(int maskOneDigit) {
 		long longMask = 0;
 		for (int i = 31; i >= 32 - maskOneDigit; i--) {
 			longMask += Math.pow(2, i);
@@ -243,7 +243,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws Exception 
 	 */
-	public static int getMaskOneDigit(String mask) throws Exception {
+	public int getMaskOneDigit(String mask) throws Exception {
 		int count = 0;
 		long[] maskArr = null;
 		try {
@@ -282,7 +282,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws Exception 
 	 */
-	public static String getMask(int maskOneDigit) throws Exception {
+	public String getMask(int maskOneDigit) throws Exception {
 		if (!checkMask(maskOneDigit)) {
 			throw new Exception(MASK_ERROR + maskOneDigit + " not in [0-32]");
 		}
@@ -327,7 +327,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws Exception 
 	 */
-	public static long ipCount(int maskOneDigit) throws Exception {
+	public long ipCount(int maskOneDigit) throws Exception {
 		if (!checkMask(maskOneDigit)) {
 			throw new Exception(MASK_ERROR + maskOneDigit + " not in [0-32]");
 		}
@@ -346,7 +346,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws Exception
 	 */
-	public static long[] splitIpToArray (String param) throws Exception {
+	public long[] splitIpToArray (String param) throws Exception {
 		long[] ipArray = new long[4];
 		String[] arr = param.split("\\.");
 		if (arr.length != 4) {
@@ -369,7 +369,7 @@ public class Ipv4Utils {
 	 * @param ipArr:IP地址段
 	 * @return
 	 */
-	public static long ipToLong(long[] ipArr) {
+	public long ipToLong(long[] ipArr) {
 	/*long res = 0;
 		for (int i = 0; i < 4; i++) {
 			res <<= 8;
@@ -388,7 +388,7 @@ public class Ipv4Utils {
 	 * @param longIp
 	 * @return
 	 */
-	public static String longToIP(long longIp) {
+	public String longToIP(long longIp) {
 		StringBuffer sb = new StringBuffer("");
 		//右移24位
 		sb.append(String.valueOf(longIp >>> 24));
@@ -410,7 +410,7 @@ public class Ipv4Utils {
 	 * @param endIp2
 	 * @return boolean   
 	 */
-	public static boolean isIntersection(
+	public boolean isIntersection(
 			long startIP1, long endIp1, long startIP2, long endIp2){
 		if(startIP2 <= endIp1 && endIp2 >= startIP1){
 			return true;
@@ -429,7 +429,7 @@ public class Ipv4Utils {
 	 * 
 	 * @throws Exception 
 	 */
-	public static String getNetworkSegment(String segIp, int maskOneDigit) throws Exception {
+	public String getNetworkSegment(String segIp, int maskOneDigit) throws Exception {
 		long ipLong = 0;
 		try {
 			ipLong = ipToLong(splitIpToArray(segIp));
@@ -451,7 +451,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws UnknownHostException
 	 */
-	public static String getIpByDN(String hostDN) throws UnknownHostException  {
+	public String getIpByDN(String hostDN) throws UnknownHostException  {
 		InetAddress address = InetAddress.getByName(hostDN);
 		return address.getHostAddress();
 	}
@@ -461,7 +461,7 @@ public class Ipv4Utils {
 	 * @return
 	 * @throws SocketException
 	 */
-	public static List<String> getHostIp() throws SocketException {
+	public List<String> getHostIp() throws SocketException {
 		List<String> ipList = new ArrayList<String>();
 		Enumeration<NetworkInterface> netInterfaces = NetworkInterface
 				.getNetworkInterfaces();

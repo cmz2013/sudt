@@ -1,6 +1,5 @@
 package cn.tool.ui.dialog;
 
-import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 import cn.tool.config.ToolConfig;
@@ -29,6 +28,7 @@ public class HostAddDialog extends AbstractHostDialog {
 	@Override
 	public void clearContext() {
 		ipField.setText("");
+		portField.setText("");
 		userField.setText(ToolConfig.user.getDefaultUser());
 		pasField.setText("");
 		ipField.requestFocus();
@@ -39,10 +39,13 @@ public class HostAddDialog extends AbstractHostDialog {
 		if (SystemConst.DIALOG_UPDATE == getDialogType()) {
 			TableUtils.updateRow(hostList, updateRow, 
 					ipField.getText(), 
+					portField.getText(),
 					userField.getText(), 
 					pasField.getText());
 		} else {
-			TableUtils.appendRow(hostList, ipField.getText(), 
+			TableUtils.appendRow(hostList, 
+					ipField.getText(), 
+					portField.getText(),
 					userField.getText(), 
 					pasField.getText());
 		}
@@ -50,8 +53,7 @@ public class HostAddDialog extends AbstractHostDialog {
 		return null;
 	}
 
-	@Override
-	protected JDialog getDialog() {
+	public AbstractDialog getDialog() {
 		return this;
 	}
 

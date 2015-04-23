@@ -23,7 +23,7 @@ public class DeployThread extends Thread {
 	private HostInfo hostInfo; 
 	private List<CommandLine> commandList;
 	private Log log = null;
-	private SSHShellRunner shell = null;
+	private SSHShellExcutor shell = null;
 	
 	public DeployThread(HostInfo hostInfo, 
 			List<CommandLine> commandList, Log log) {
@@ -42,9 +42,10 @@ public class DeployThread extends Thread {
 			log.info(ToolConfig.i18.getProperty("soft.deploy.tool.execute.tip1") + 
 					hostInfo.getIp() + " ... ");
 			
-			shell = new SSHShellExcutor(hostInfo.getIp(),
+			shell = new SSHShellExcutor(hostInfo.getIp(), hostInfo.getPort(),
 					hostInfo.getUserName(), hostInfo.getPassWord());
 			shell.connect();
+			
 			for (CommandLine command : commandList) {
 				try {
 					while (DeployManager.isPause()) {
@@ -112,7 +113,7 @@ public class DeployThread extends Thread {
 		}
 	}
 	
-	private void executeDeploy (SSHShellRunner shell, 
+	private void executeDeploy (SSHShellExcutor shell, 
 			CommandLine command) throws Exception {
 		String commandLine = command.getCommand().trim();
 		try {

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
+	<section name="">
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
 	</section>
-	<section name="">
+	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
 		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
 	</section>
@@ -26,6 +26,8 @@
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
+			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
+			<item value="com.python.pydev.ui.search.pySearchPage"/>
 		</list>
 		<list key="Search.enabledPageIds">
 			<item value="org.eclipse.rse.internal.files.ui.search.searchPage"/>
@@ -34,6 +36,8 @@
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
+			<item value="org.eclipse.cdt.ui.pdomSearchPage"/>
+			<item value="com.python.pydev.ui.search.pySearchPage"/>
 		</list>
 	</section>
 	<section name="org.eclipse.search.text.FileSearchResultPage">
@@ -43,10 +47,10 @@
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="SEARCH_DERIVED"/>
-		<item value="7" key="HISTORY_SIZE"/>
+		<item value="8" key="HISTORY_SIZE"/>
 		<section name="HISTORY2">
 			<item value="false" key="isRegExSearch"/>
-			<item value="HEIGHT" key="textPattern"/>
+			<item value="soft.deploy.tool.tip" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -60,7 +64,7 @@
 		</section>
 		<section name="HISTORY3">
 			<item value="false" key="isRegExSearch"/>
-			<item value="WIDTH" key="textPattern"/>
+			<item value="HEIGHT" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -71,7 +75,7 @@
 		</section>
 		<section name="HISTORY0">
 			<item value="false" key="isRegExSearch"/>
-			<item value="TableUtils.setCloumnWidth(" key="textPattern"/>
+			<item value="21" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -82,7 +86,7 @@
 		</section>
 		<section name="HISTORY1">
 			<item value="false" key="isRegExSearch"/>
-			<item value="soft.deploy.tool.tip" key="textPattern"/>
+			<item value="TableUtils.setCloumnWidth(" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -93,7 +97,7 @@
 		</section>
 		<section name="HISTORY5">
 			<item value="false" key="isRegExSearch"/>
-			<item value="JTextField" key="textPattern"/>
+			<item value="new JTextField(" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -104,7 +108,18 @@
 		</section>
 		<section name="HISTORY4">
 			<item value="false" key="isRegExSearch"/>
-			<item value="new JTextField(" key="textPattern"/>
+			<item value="WIDTH" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY7">
+			<item value="false" key="isRegExSearch"/>
+			<item value="project.tool." key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -115,7 +130,7 @@
 		</section>
 		<section name="HISTORY6">
 			<item value="false" key="isRegExSearch"/>
-			<item value="project.tool." key="textPattern"/>
+			<item value="JTextField" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">

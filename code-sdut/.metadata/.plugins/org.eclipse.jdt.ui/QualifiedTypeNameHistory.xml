@@ -54,4 +54,6 @@
 <fullyQualifiedTypeName name="cn.tool.config.ToolConfig"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="cn.tool.shell.LocalShellExcutor"/>
+<fullyQualifiedTypeName name="cn.tool.ui.dialog.AbstractDialog"/>
 </qualifiedTypeNameHistroy>

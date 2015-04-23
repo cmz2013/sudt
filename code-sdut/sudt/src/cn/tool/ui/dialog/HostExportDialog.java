@@ -2,8 +2,6 @@ package cn.tool.ui.dialog;
 
 import java.util.List;
 
-import javax.swing.JDialog;
-
 import cn.tool.config.ToolConfig;
 import cn.tool.deploy.scheme.HostInfo;
 /**
@@ -22,7 +20,7 @@ public class HostExportDialog extends FileOutputDialog {
 	}
 
 	@Override
-	protected JDialog getDialog() {
+	public AbstractDialog getDialog() {
 		return this;
 	}
 

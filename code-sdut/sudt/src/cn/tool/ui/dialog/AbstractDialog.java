@@ -6,11 +6,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import javax.swing.Icon;
 import javax.swing.JButton;
@@ -18,17 +13,14 @@ import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.text.JTextComponent;
 
 import org.apache.commons.lang.StringUtils;
 
 import cn.tool.config.ToolConfig;
-import cn.tool.lang.swing.ComFactory;
+import cn.tool.lang.swing.SwingFactory;
 import cn.tool.ui.resour.IconContainer;
 import cn.tool.ui.resour.SystemConst;
-import cn.tool.validate.ValidateUtils;
-import cn.tool.validate.annotation.Validations;
-import cn.tool.validate.model.DataModel;
+import cn.tool.validate.ValidateService;
 /**
  * 对话框模板
  * 
@@ -38,11 +30,11 @@ import cn.tool.validate.model.DataModel;
 @SuppressWarnings("serial")
 public abstract class AbstractDialog extends JDialog {
 	
-	private JButton sureBtn = ComFactory.getButton("soft.deploy.tool.button.sure");
-	private JButton cancelBtn = ComFactory.getButton("soft.deploy.tool.button.cancel");
+	private JButton sureBtn = SwingFactory.getButton("soft.deploy.tool.button.sure");
+	private JButton cancelBtn = SwingFactory.getButton("soft.deploy.tool.button.cancel");
 	private JLabel infoLabel = new JLabel(" ");
 	
-	private Map<JLabel, String> labelMap = new HashMap<JLabel, String>();
+	private ValidateService valService = new ValidateService();
 	private int dialogType;
 
 	public AbstractDialog(int dialogType) {
@@ -64,78 +56,6 @@ public abstract class AbstractDialog extends JDialog {
 
 	public void setDialogType(int dialogType) {
 		this.dialogType = dialogType;
-	}
-
-	/**
-	 * 封装数据模型DataModel
-	 * 
-	 * @throws Exception
-	 */
-	private List<DataModel> getDataModels() throws Exception {
-		List<DataModel> dataModels = new ArrayList<>();
-		
-		Class<?> clazz  = null;
-		do {
-			if (null == clazz) {
-				clazz = getDialog().getClass();
-			} else {
-				clazz = clazz.getSuperclass();
-			}
-			
-			for (Field field : clazz.getDeclaredFields()) {
-				if (field.isAnnotationPresent(Validations.class)) {
-					field.setAccessible(true);
-					Validations valaAnno = field.getAnnotation(Validations.class);
-					Object dataObj =  field.get(getDialog());
-					
-					if (null != dataObj) {
-						if (dataObj instanceof JTextComponent) {
-							JTextComponent textBox = (JTextComponent) dataObj;
-							DataModel model = getTextBoxDataModels(textBox, valaAnno);
-							if (null != model) {
-								dataModels.add(model);
-							}
-						}
-					}
-					field.setAccessible(false);
-				}
-			}		
-		} while(!AbstractDialog.class.equals(clazz));
-		
-		return dataModels;
-	}
-
-	/**
-	 * JTextComponent类型的 DataModels
-	 * @param textBox
-	 * @param valaAnno
-	 * @throws Exception
-	 */
-	private DataModel getTextBoxDataModels(JTextComponent
-			textBox, Validations valaAnno) throws Exception {
-		
-		boolean enabled = textBox.isEnabled();
-		/*
-		 * 组件不可用时不验证
-		 */
-		if (enabled) {
-			JLabel label = (JLabel) getDialog().getClass().getMethod(
-					valaAnno.getInfoLabel()).invoke(getDialog());
-			
-			if (!labelMap.containsKey(label)) {
-				labelMap.put(label, label.getText());
-				ComFactory.setMouseListener(textBox, label, labelMap.get(label));
-			}
-			
-			DataModel dataModel = new DataModel();
-			dataModel.setInfoLabel(label);
-			dataModel.setType(valaAnno.type());
-			dataModel.setValue(textBox.getText());
-			dataModel.setInfo(ToolConfig.i18.getProperty(valaAnno.info()));
-			dataModel.setRegular(valaAnno.regular());
-			return dataModel;
-		}
-		return null;
 	}
 
 	private void setWindowListener() {
@@ -160,8 +80,7 @@ public abstract class AbstractDialog extends JDialog {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-					List<DataModel> dataModels = getDataModels();
-					if(ValidateUtils.validate(dataModels) && validates()) {
+					if(valService.validate(getDialog()) && validates()) {
 						String mes = sureExecute();
 						// handle success
 						setSuccessInfo(mes);
@@ -274,6 +193,12 @@ public abstract class AbstractDialog extends JDialog {
 			}
 		}
 	}
+	
+	/**
+	 * 获取实例
+	 * @return
+	 */
+	public abstract AbstractDialog getDialog();
 
 	/**
 	 * 清空输入组件中的内容，或设为默认值
@@ -293,19 +218,13 @@ public abstract class AbstractDialog extends JDialog {
 	 */
 	protected abstract String sureExecute() throws Exception;
 	
-	/**
-	 * 获取实例
-	 * @return
-	 */
-	protected abstract JDialog getDialog();
-
 	private void setCancelBtnActionListener() {
 		cancelBtn.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				closeDialog();
-				setLabelDefaultText();
+				valService.setLabelDefaultText();
 			}
 		});
 	}
@@ -342,16 +261,4 @@ public abstract class AbstractDialog extends JDialog {
 		}).start();
 	}
 
-	/**
-	 * 清空验证失败提示信息
-	 */
-	private void setLabelDefaultText() {
-		for (JLabel label : labelMap.keySet()) {
-			if (Color.RED.equals(label.getForeground())) {
-				label.setText(labelMap.get(label));
-				label.setForeground(Color.BLACK);
-			}
-		}
-	}
-	
 }

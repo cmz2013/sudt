@@ -17,14 +17,6 @@ public class SSHShellExcutor {
 	private NvtSshShell nvt;
 	private ShellCertificate cert;
 	
-	public SSHShellExcutor(String ip, String userName, String psw) {
-		cert = new ShellCertificate();
-		cert.setIp(ip);
-		cert.setPort(22);
-		cert.setUserName(userName);
-		cert.setPsw(psw);
-	}
-
 	public SSHShellExcutor(String ip, int port, String userName, String psw) {
 		cert = new ShellCertificate();
 		cert.setIp(ip);

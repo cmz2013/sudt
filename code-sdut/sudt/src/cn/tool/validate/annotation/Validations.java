@@ -25,13 +25,12 @@ public @interface Validations {
 	 * 文本框数据类型
 	 */
 	 public static enum Type {
-		 ip, text, integer
+		 ip, port, text
 	 }
 	
 	 /**
 	  * 如果文本框数据为text类型，需要指定正则表达式
-     * 如果文本框数据为ip类型，不需要指定正则表达式和信息key
-     * integer当前未用，可针对integer类型添加max/min等属性
+      * 如果文本框数据为ip、port、int类型，不需要指定正则表达式和信息key
 	  */ 
 	public String regular() default "";
 	/**

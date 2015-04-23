@@ -17,7 +17,7 @@ import javax.swing.JTable;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.table.DefaultTableModel;
 
-import cn.tool.lang.swing.ComFactory;
+import cn.tool.lang.swing.SwingFactory;
 import cn.tool.ui.resour.IconContainer;
 /**
  * table模板
@@ -27,7 +27,7 @@ import cn.tool.ui.resour.IconContainer;
  */
 @SuppressWarnings("serial")
 public abstract class TablePanel extends JPanel {
-	protected JTable table = ComFactory.getTable();
+	protected JTable table = SwingFactory.getTable();
 	protected JScrollPane tableScrollPanel = new JScrollPane(table);
 	protected boolean tableEnabled = true;
 	
@@ -41,9 +41,9 @@ public abstract class TablePanel extends JPanel {
 		}
 	};
 	
-	protected JButton addBtn = ComFactory.getButton(
+	protected JButton addBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.add", IconContainer.icon_add);
-	protected JButton delBtn = ComFactory.getButton(
+	protected JButton delBtn = SwingFactory.getButton(
 			"soft.deploy.tool.button.delete", IconContainer.icon_del);
 	
 	public TablePanel(DefaultTableModel model) {

@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 import cn.tool.config.ToolConfig;
-import cn.tool.lang.swing.ComFactory;
+import cn.tool.lang.swing.SwingFactory;
 import cn.tool.validate.annotation.Validations;
 /**
  * 主机对话框模板
@@ -25,6 +25,8 @@ public abstract class AbstractHostDialog extends AbstractDialog {
 			+ ToolConfig.i18.getProperty("soft.deploy.tool.password") + " ");
 	protected JLabel ipLabel = new JLabel(" "
 			+ ToolConfig.i18.getProperty("soft.deploy.tool.host.ip") + " ");
+	protected JLabel portLabel = new JLabel(" "
+			+ ToolConfig.i18.getProperty("soft.deploy.tool.host.port") + " ");
 	protected JLabel userLabel = new JLabel(" "
 			+ ToolConfig.i18.getProperty("soft.deploy.tool.host.user") + " ");
 	
@@ -33,11 +35,14 @@ public abstract class AbstractHostDialog extends AbstractDialog {
 	protected JTextField pasField;
 	
 	@Validations(type=Validations.Type.ip, getInfoLabel = "getIpLabel")
-	protected JTextField ipField = ComFactory.getTextField();
+	protected JTextField ipField = SwingFactory.getTextField();
+	
+	@Validations(type=Validations.Type.port, getInfoLabel = "getPortLabel")
+	protected JTextField portField = SwingFactory.getTextField();
 	
 	@Validations(type=Validations.Type.text, regular = ".+", info = 
 			"soft.deploy.tool.host.user.null", getInfoLabel = "getUserLabel")
-	protected JTextField userField = ComFactory.getTextField();
+	protected JTextField userField = SwingFactory.getTextField();
 
 	protected JPanel mainPanel = new JPanel();
 	protected JPanel fieldPanel = new JPanel();
@@ -49,7 +54,7 @@ public abstract class AbstractHostDialog extends AbstractDialog {
 		super(dialogType);
 		this.hostList = hostList;
 		if (ToolConfig.user.isShowPassword()) {
-			pasField = ComFactory.getTextField();
+			pasField = SwingFactory.getTextField();
 		} else {
 			pasField = new JPasswordField(26);
 		}
@@ -64,6 +69,10 @@ public abstract class AbstractHostDialog extends AbstractDialog {
 		return ipLabel;
 	}
 
+	public JLabel getPortLabel() {
+		return portLabel;
+	}
+
 	public JLabel getUserLabel() {
 		return userLabel;
 	}
@@ -71,14 +80,17 @@ public abstract class AbstractHostDialog extends AbstractDialog {
 	private void setLayout(String titleKey) {
 		pasLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		ipLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+		portLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		userLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		setTitle(ToolConfig.i18.getProperty(titleKey));
-		labelPanel.setLayout(new GridLayout(3, 1));
-		fieldPanel.setLayout(new GridLayout(3, 1));
+		labelPanel.setLayout(new GridLayout(4, 1));
+		fieldPanel.setLayout(new GridLayout(4, 1));
 		labelPanel.add(ipLabel);
+		labelPanel.add(portLabel);
 		labelPanel.add(userLabel);
 		labelPanel.add(pasLabel);
 		fieldPanel.add(ipField);
+		fieldPanel.add(portField);
 		fieldPanel.add(userField);
 		fieldPanel.add(pasField);
 		mainPanel.setLayout(new BorderLayout());

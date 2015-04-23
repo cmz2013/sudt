@@ -1,0 +1,8 @@
+2015-04-21 17:49:34,676 [123.126.34.63] INFO  - 开始部署：123.126.34.63 ... 
+2015-04-21 17:49:36,642 [123.126.34.63] INFO  - pwd
+/root
+[root@crmdev ~]#
+2015-04-21 17:49:37,157 [123.126.34.63] INFO  - ls
+abc.txt  anaconda-ks.cfg  apache-tomcat-6.0.30.zip  Desktop  dir  Documents  Downloads	eos_platform_7.2_install.log  jdk-8u31-linux-x64.gz  ls  Music	nmon  Pictures	Public	Templates  Videos  中文支持.txt
+[root@crmdev ~]#
+2015-04-21 17:49:37,157 [123.126.34.63] INFO  - 123.126.34.63 部署成功！

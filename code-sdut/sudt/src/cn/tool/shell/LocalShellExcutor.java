@@ -21,7 +21,7 @@ import cn.tool.lang.io.CharsetDetector;
  *  3.	 用C写了一个可执行文件，将编译出的可执行文件"fork_wait"放在 linux 下，
  *  	String cmd = "./fork_wait";
  */
-public class LocalShellRunner {
+public class LocalShellExcutor {
 	
 	public static final String LINE_SEPARATOR = System
 			.getProperty("line.separator");

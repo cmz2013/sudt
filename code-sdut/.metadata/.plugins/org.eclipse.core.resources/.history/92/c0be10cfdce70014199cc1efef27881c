@@ -1,0 +1,109 @@
+package cn.tool.validate;
+
+import java.awt.Color;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import javax.swing.JLabel;
+
+import org.apache.commons.lang.StringUtils;
+
+import cn.tool.config.ToolConfig;
+import cn.tool.lang.ip.Ipv4Utils;
+import cn.tool.validate.annotation.Validations.Type;
+import cn.tool.validate.model.DataModel;
+
+/**
+ * 数据验证
+ * 
+ * @author chongming
+ *
+ */
+public class ValidateUtils {
+
+	public static boolean validate(
+			List<DataModel> models) throws Exception {
+		
+		boolean validateResult = true;
+		
+		for (final DataModel model : models) {
+			if (Type.ip.equals(model.getType())) {
+				if (!validateIpv4(model) || !validateIpv6(model)) {
+					validateResult = false;
+				}
+			} else if (Type.text.equals(model.getType())) {
+				Pattern pattern = Pattern.compile(model.getRegular());
+				Matcher matcher = pattern.matcher(model.getValue() + "");
+				if (!matcher.matches()) {
+					setValidateInfo(model.getInfoLabel(), 
+							model.getInfo());
+					validateResult = false;
+				}
+			} else if (Type.port.equals(model.getType())) {
+				if (!validatePort(model)) {
+					validateResult = false;
+				}
+			}
+		}
+		return validateResult;
+	}
+
+	/**
+	 * 验证端口号
+	 * @param dataModel
+	 * @return
+	 */
+	private static boolean validatePort(DataModel dataModel) {
+		String portStr = dataModel.getValue();
+		
+		if (StringUtils.isBlank(portStr)) {
+			setValidateInfo(dataModel.getInfoLabel(), 
+					ToolConfig.i18.getProperty("soft.deploy.tool.host.port.null"));
+		}
+		
+		try {
+			int port = Integer.parseInt(portStr);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		return false;
+	}
+
+	private static boolean validateIpv6(DataModel dataModel) {
+		// TODO
+		return true;
+	}
+
+	/**
+	 * 验证IPv4
+	 * 
+	 * @param dataModel
+	 * @return
+	 * @throws Exception
+	 */
+	private static boolean validateIpv4(DataModel dataModel) throws Exception {
+		String hostIp = dataModel.getValue();
+		if (StringUtils.isBlank(hostIp)) {
+			setValidateInfo(dataModel.getInfoLabel(), 
+					ToolConfig.i18.getProperty("soft.deploy.tool.host.ip.null"));
+			return false;
+		} else if (!Ipv4Utils.checkIpFormat(hostIp)) {
+			setValidateInfo(dataModel.getInfoLabel(), 
+					ToolConfig.i18.getProperty("soft.deploy.tool.host.ip.error"));
+			return false;
+		} else if (!Ipv4Utils.isHostIP(hostIp)) {
+			setValidateInfo(dataModel.getInfoLabel(), 
+					ToolConfig.i18.getProperty("soft.deploy.tool.host.ip.unused"));
+			return false;
+		}
+		return true;
+	}
+
+	private static void setValidateInfo(JLabel label, String tipText) {
+		label.setText(" " + tipText);
+		label.setForeground(Color.RED);
+	}
+
+}

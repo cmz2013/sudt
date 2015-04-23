@@ -10,7 +10,7 @@ import javax.swing.JTextField;
 import javax.swing.SpinnerNumberModel;
 
 import cn.tool.config.ToolConfig;
-import cn.tool.lang.swing.ComFactory;
+import cn.tool.lang.swing.SwingFactory;
 import cn.tool.validate.annotation.Validations;
 /**
  * 命令对话框模板
@@ -24,7 +24,7 @@ public abstract class AbstractCmdDialog extends AbstractDialog {
 	
 	@Validations(type=Validations.Type.text, regular = ".+", info = 
 			"soft.deploy.tool.command.expression.null", getInfoLabel = "getCmdExpLabel")
-	protected JTextField cmdExp = ComFactory.getTextField();
+	protected JTextField cmdExp = SwingFactory.getTextField();
 	
 	protected JLabel  cmdExpLabel = new JLabel(" " 
 			+ ToolConfig.i18.getProperty("soft.deploy.tool.command.expression") + " ");
