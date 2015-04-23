@@ -123,12 +123,8 @@ public class DeployTabbed {
 	private void setLayout() {
 		TableUtils.hideColumn(hostTablePanel.getTable(), 2, 3);
 		TableUtils.hideColumn(cmdTablePanel.getTable(), 1, 2);
-		hostTablePanel.getTable().getColumnModel(
-				).getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH/2);
-		hostTablePanel.getTable().getColumnModel(
-				).getColumn(1).setMinWidth(SystemConst.TABLE_WIDTH/2);
-		cmdTablePanel.getTable().getColumnModel(
-				).getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH);
+		hostTablePanel.getTable().getColumnModel().getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH);
+		cmdTablePanel.getTable().getColumnModel().getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH);
 		
 		cmdTablePanel.add(bottomPanel, BorderLayout.SOUTH);
 	}

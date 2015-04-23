@@ -32,9 +32,10 @@ public class DeployTabbed {
 	private SplitPane deployPanel;
 	
 	private BottomlPanel bottomPanel = new BottomlPanel();
-	private HostTablePanel hostTablePanel = new HostTablePanel(TableUtils.getDefaultTableModel(
-					ToolConfig.i18.getProperty("soft.deploy.tool.host.list"), 
-					ToolConfig.i18.getProperty("soft.deploy.tool.host.port"), "", ""));
+	private HostTablePanel hostTablePanel = new HostTablePanel(
+			TableUtils.getDefaultTableModel(
+			ToolConfig.i18.getProperty("soft.deploy.tool.host.list"), 
+			ToolConfig.i18.getProperty("soft.deploy.tool.host.port"), "", ""));
 	
 	private ConsoleFrame console = null;
 	
@@ -121,14 +122,10 @@ public class DeployTabbed {
 	}
 
 	private void setLayout() {
-		TableUtils.hideColumn(hostTablePanel.getTable(), 2, 3);
+		TableUtils.hideColumn(hostTablePanel.getTable(), 1, 2);
 		TableUtils.hideColumn(cmdTablePanel.getTable(), 1, 2);
-		hostTablePanel.getTable().getColumnModel(
-				).getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH/2);
-		hostTablePanel.getTable().getColumnModel(
-				).getColumn(1).setMinWidth(SystemConst.TABLE_WIDTH/2);
-		cmdTablePanel.getTable().getColumnModel(
-				).getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH);
+		hostTablePanel.getTable().getColumnModel().getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH);
+		cmdTablePanel.getTable().getColumnModel().getColumn(0).setMinWidth(SystemConst.TABLE_WIDTH);
 		
 		cmdTablePanel.add(bottomPanel, BorderLayout.SOUTH);
 	}
