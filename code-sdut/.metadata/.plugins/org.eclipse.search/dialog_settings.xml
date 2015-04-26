@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="">
-		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
-		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
 	</section>
 	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
@@ -12,10 +11,10 @@
 		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item value="606" key="DIALOG_WIDTH"/>
-		<item value="76" key="DIALOG_Y_ORIGIN"/>
-		<item value="209" key="DIALOG_X_ORIGIN"/>
+		<item value="559" key="DIALOG_WIDTH"/>
+		<item value="192" key="DIALOG_Y_ORIGIN"/>
 		<item value="478" key="DIALOG_HEIGHT"/>
+		<item value="540" key="DIALOG_X_ORIGIN"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="Search">
@@ -47,10 +46,10 @@
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="SEARCH_DERIVED"/>
-		<item value="8" key="HISTORY_SIZE"/>
-		<section name="HISTORY2">
+		<item value="12" key="HISTORY_SIZE"/>
+		<section name="HISTORY11">
 			<item value="false" key="isRegExSearch"/>
-			<item value="soft.deploy.tool.tip" key="textPattern"/>
+			<item value="soft.deploy.tool.button.add" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -62,9 +61,31 @@
 		<section name="EXTENSIONS">
 			<item value="*" key="0"/>
 		</section>
+		<section name="HISTORY2">
+			<item value="false" key="isRegExSearch"/>
+			<item value="sudt.tip" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
 		<section name="HISTORY3">
 			<item value="false" key="isRegExSearch"/>
-			<item value="HEIGHT" key="textPattern"/>
+			<item value="sudt.confirm" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY10">
+			<item value="false" key="isRegExSearch"/>
+			<item value="soft.deploy.tool.button.delete" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -75,7 +96,7 @@
 		</section>
 		<section name="HISTORY0">
 			<item value="false" key="isRegExSearch"/>
-			<item value="21" key="textPattern"/>
+			<item value="busy" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -86,7 +107,29 @@
 		</section>
 		<section name="HISTORY1">
 			<item value="false" key="isRegExSearch"/>
-			<item value="TableUtils.setCloumnWidth(" key="textPattern"/>
+			<item value="sudt.host.list.delete" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY9">
+			<item value="false" key="isRegExSearch"/>
+			<item value="soft.deploy.tool.button.import" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY8">
+			<item value="false" key="isRegExSearch"/>
+			<item value="sudt.button.import" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -97,7 +140,7 @@
 		</section>
 		<section name="HISTORY5">
 			<item value="false" key="isRegExSearch"/>
-			<item value="new JTextField(" key="textPattern"/>
+			<item value="sudt.confirm.exit" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -108,7 +151,7 @@
 		</section>
 		<section name="HISTORY4">
 			<item value="false" key="isRegExSearch"/>
-			<item value="WIDTH" key="textPattern"/>
+			<item value="sudt.error" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -119,7 +162,7 @@
 		</section>
 		<section name="HISTORY7">
 			<item value="false" key="isRegExSearch"/>
-			<item value="project.tool." key="textPattern"/>
+			<item value="soft.deploy.tool.button.export" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -130,7 +173,7 @@
 		</section>
 		<section name="HISTORY6">
 			<item value="false" key="isRegExSearch"/>
-			<item value="JTextField" key="textPattern"/>
+			<item value="soft.deploy.tool" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">

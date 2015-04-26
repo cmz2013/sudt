@@ -2,12 +2,12 @@
 <digester-rules>
 	<pattern value="toolConfig">
 		<pattern value="deployConfig">
-			<object-create-rule classname="cn.tool.config.DeplogConfig" />
+			<object-create-rule classname="cn.sudt.config.DeplogConfig" />
 			<set-properties-rule />
 			<set-next-rule methodname="setDeployConfig"/>
 		</pattern>
 		<pattern value="userConfig">
-			<object-create-rule classname="cn.tool.config.UserConfig" />
+			<object-create-rule classname="cn.sudt.config.UserConfig" />
 			<set-properties-rule />
 			<set-next-rule methodname="setUserConfig"/>
 		</pattern>

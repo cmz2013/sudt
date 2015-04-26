@@ -21,9 +21,10 @@
 	 defaultUser:The host user name
 	-->
 	<userConfig language="en"
-				defaultUser="root" 
+				defaultUser="root"
+				defaultPort="22"
 				closeUpdate="true"
-				closeAdd="true" 
+				closeAdd="false" 
 				showPassword="false"
 	/>
 </toolConfig>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="24" version="2.0">
 <workbenchAdvisor/>
-<window height="760" maximized="true" width="926" x="317" y="20">
+<window height="760" maximized="true" width="1001" x="644" y="-19">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -57,31 +57,28 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployTabbed.java" partName="DeployTabbed.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/tool/ui/tab/DeployTabbed.java" title="DeployTabbed.java" tooltip="sudt/src/cn/tool/ui/tab/DeployTabbed.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/tool/ui/tab/DeployTabbed.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3206" selectionTopPixel="1311"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployThread.java" partName="DeployThread.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/sudt/deploy/DeployThread.java" title="DeployThread.java" tooltip="sudt/src/cn/sudt/deploy/DeployThread.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="367" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostAddDialog.java" partName="HostAddDialog.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/tool/ui/dialog/HostAddDialog.java" title="HostAddDialog.java" tooltip="sudt/src/cn/tool/ui/dialog/HostAddDialog.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/tool/ui/dialog/HostAddDialog.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1518" selectionTopPixel="931"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployManager.java" partName="DeployManager.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/sudt/deploy/DeployManager.java" title="DeployManager.java" tooltip="sudt/src/cn/sudt/deploy/DeployManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/sudt/deploy/DeployManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="232"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractDialog.java" partName="AbstractDialog.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/tool/ui/dialog/AbstractDialog.java" title="AbstractDialog.java" tooltip="sudt/src/cn/tool/ui/dialog/AbstractDialog.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/tool/ui/dialog/AbstractDialog.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2338" selectionTopPixel="988"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployTabbed.java" partName="DeployTabbed.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/sudt/ui/tab/DeployTabbed.java" title="DeployTabbed.java" tooltip="sudt/src/cn/sudt/ui/tab/DeployTabbed.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/sudt/ui/tab/DeployTabbed.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5968" selectionTopPixel="3019"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
-<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="314" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="439"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -144,7 +141,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -336,9 +333,9 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.27896678" ratioLeft="378" ratioRight="977" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.6526656" ratioLeft="404" ratioRight="215" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.search.ui.views.SearchView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.62422997" ratioLeft="608" ratioRight="366" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.6542811" ratioLeft="405" ratioRight="214" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -378,168 +375,28 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/ui/dialog/HostAddDialog.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/ui/panel/HostTablePanel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/ui/panel/TablePanel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/ui/tab/DeployTabbed.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" path="/sudt/i18/tool_des_zh.properties"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/lang/swing/TableUtils.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/sudt/startup.bat"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/ui/dialog/HostAddDialog.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/ui/dialog/AbstractDialog.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/tool/validate/ValidateService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" path="/sudt/i18/tool_des_zh.properties"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" path="/sudt/i18/tool_des_en.properties"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/ui/tab/HelpTabbed.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/deploy/DeployManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/ui/tab/DeployTabbed.java"/>
 </editors>
-<item historyLabel="HostAddDialog.java" index="0">
-<position info="not_deleted" x="564" y="0"/>
+<item historyLabel="DeployThread.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="HostAddDialog.java" index="0">
-<position info="not_deleted" x="540" y="9"/>
+<item historyLabel="HelpTabbed.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="HostAddDialog.java" index="0">
-<position info="not_deleted" x="595" y="0"/>
+<item historyLabel="DeployManager.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="HostAddDialog.java" index="0">
-<position info="not_deleted" x="651" y="0"/>
+<item historyLabel="HelpTabbed.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="755" y="0"/>
+<item historyLabel="DeployManager.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="710" y="10"/>
-</item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="1548" y="0"/>
-</item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="1508" y="0"/>
-</item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="1532" y="0"/>
-</item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="1534" y="0"/>
-</item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="1550" y="0"/>
-</item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="1568" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="765" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="817" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="863" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="915" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="970" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="1028" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="1094" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="1152" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="1289" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="1305" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="1323" y="0"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="861" y="0"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="755" y="0"/>
-</item>
-<item historyLabel="TablePanel.java" index="2">
-<position info="not_deleted" x="710" y="10"/>
-</item>
-<item historyLabel="HostTablePanel.java" index="1">
-<position info="not_deleted" x="755" y="0"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="861" y="0"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="1026" y="0"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="964" y="0"/>
-</item>
-<item historyLabel="tool_des_zh.properties" index="4">
-<position info="not_deleted" x="1589" y="26"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="1080" y="0"/>
-</item>
-<item historyLabel="tool_des_zh.properties" index="4">
-<position info="not_deleted" x="1341" y="0"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="893" y="0"/>
-</item>
-<item historyLabel="TableUtils.java" index="5">
-<position info="not_deleted" x="999" y="20"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="893" y="0"/>
-</item>
-<item historyLabel="startup.bat" index="6">
-<position info="not_deleted" x="76" y="0"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="3206" y="0"/>
-</item>
-<item historyLabel="HostAddDialog.java" index="7">
-<position info="not_deleted" x="895" y="11"/>
-</item>
-<item historyLabel="AbstractDialog.java" index="8">
-<position info="not_deleted" x="2207" y="0"/>
-</item>
-<item historyLabel="ValidateService.java" index="9">
-<position info="not_deleted" x="903" y="8"/>
-</item>
-<item historyLabel="AbstractDialog.java" index="8">
-<position info="not_deleted" x="2228" y="9"/>
-</item>
-<item historyLabel="HostAddDialog.java" index="7">
-<position info="not_deleted" x="1603" y="0"/>
-</item>
-<item historyLabel="AbstractDialog.java" index="8">
-<position info="not_deleted" x="2338" y="0"/>
-</item>
-<item historyLabel="HostAddDialog.java" index="7">
-<position info="not_deleted" x="1898" y="36"/>
-</item>
-<item historyLabel="tool_des_zh.properties" index="10">
-<position info="not_deleted" x="1295" y="0"/>
-</item>
-<item historyLabel="tool_des_en.properties" index="11">
-<position info="not_deleted" x="1658" y="0"/>
-</item>
-<item historyLabel="tool_des_zh.properties" index="10">
-<position info="not_deleted" x="1471" y="0"/>
-</item>
-<item historyLabel="tool_des_en.properties" index="11">
-<position info="not_deleted" x="1658" y="0"/>
-</item>
-<item active="true" historyLabel="HostAddDialog.java" index="7">
-<position info="not_deleted" x="1898" y="36"/>
+<item active="true" historyLabel="DeployTabbed.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -566,50 +423,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_en.properties" tooltip="sudt/i18/tool_des_en.properties">
-<persistable path="/sudt/i18/tool_des_en.properties"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployTabbed.java" tooltip="sudt/src/cn/sudt/ui/tab/DeployTabbed.java">
+<persistable path="/sudt/src/cn/sudt/ui/tab/DeployTabbed.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_zh.properties" tooltip="sudt/i18/tool_des_zh.properties">
-<persistable path="/sudt/i18/tool_des_zh.properties"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployManager.java" tooltip="sudt/src/cn/sudt/deploy/DeployManager.java">
+<persistable path="/sudt/src/cn/sudt/deploy/DeployManager.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ValidateService.java" tooltip="sudt/src/cn/tool/validate/ValidateService.java">
-<persistable path="/sudt/src/cn/tool/validate/ValidateService.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HelpTabbed.java" tooltip="sudt/src/cn/sudt/ui/tab/HelpTabbed.java">
+<persistable path="/sudt/src/cn/sudt/ui/tab/HelpTabbed.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractDialog.java" tooltip="sudt/src/cn/tool/ui/dialog/AbstractDialog.java">
-<persistable path="/sudt/src/cn/tool/ui/dialog/AbstractDialog.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployThread.java" tooltip="sudt/src/cn/sudt/deploy/DeployThread.java">
+<persistable path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostAddDialog.java" tooltip="sudt/src/cn/tool/ui/dialog/HostAddDialog.java">
-<persistable path="/sudt/src/cn/tool/ui/dialog/HostAddDialog.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/TablePanel.java">
+<persistable path="/sudt/src/cn/sudt/ui/panel/TablePanel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="startup.bat" tooltip="sudt/startup.bat">
-<persistable path="/sudt/startup.bat"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConcurrentController.java" tooltip="sudt/src/cn/sudt/deploy/ConcurrentController.java">
+<persistable path="/sudt/src/cn/sudt/deploy/ConcurrentController.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TableUtils.java" tooltip="sudt/src/cn/tool/lang/swing/TableUtils.java">
-<persistable path="/sudt/src/cn/tool/lang/swing/TableUtils.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CmdTablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/CmdTablePanel.java">
+<persistable path="/sudt/src/cn/sudt/ui/panel/CmdTablePanel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostTablePanel.java" tooltip="sudt/src/cn/tool/ui/panel/HostTablePanel.java">
-<persistable path="/sudt/src/cn/tool/ui/panel/HostTablePanel.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsoleFrame.java" tooltip="sudt/src/cn/sudt/ui/frame/ConsoleFrame.java">
+<persistable path="/sudt/src/cn/sudt/ui/frame/ConsoleFrame.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TablePanel.java" tooltip="sudt/src/cn/tool/ui/panel/TablePanel.java">
-<persistable path="/sudt/src/cn/tool/ui/panel/TablePanel.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="AbstractButton.class" tooltip="javax.swing.AbstractButton">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=sudt/D:\/Tool\/jdk\/jdk7-64\/jre\/lib\/rt.jar&lt;javax.swing(AbstractButton.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractHostDialog.java" tooltip="sudt/src/cn/tool/ui/dialog/AbstractHostDialog.java">
-<persistable path="/sudt/src/cn/tool/ui/dialog/AbstractHostDialog.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="JSplitPane.class" tooltip="javax.swing.JSplitPane">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=sudt/D:\/Tool\/jdk\/jdk7-64\/jre\/lib\/rt.jar&lt;javax.swing(JSplitPane.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainFrame.java" tooltip="sudt/src/cn/tool/ui/frame/MainFrame.java">
-<persistable path="/sudt/src/cn/tool/ui/frame/MainFrame.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SplitPane.java" tooltip="sudt/src/cn/sudt/ui/panel/SplitPane.java">
+<persistable path="/sudt/src/cn/sudt/ui/panel/SplitPane.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployManager.java" tooltip="sudt/src/cn/tool/deploy/DeployManager.java">
-<persistable path="/sudt/src/cn/tool/deploy/DeployManager.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployTool.java" tooltip="sudt/src/cn/sudt/DeployTool.java">
+<persistable path="/sudt/src/cn/sudt/DeployTool.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployThread.java" tooltip="sudt/src/cn/tool/deploy/DeployThread.java">
-<persistable path="/sudt/src/cn/tool/deploy/DeployThread.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BottomlPanel.java" tooltip="sudt/src/cn/sudt/ui/panel/BottomlPanel.java">
+<persistable path="/sudt/src/cn/sudt/ui/panel/BottomlPanel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeplogConfig.java" tooltip="sudt/src/cn/tool/config/DeplogConfig.java">
-<persistable path="/sudt/src/cn/tool/config/DeplogConfig.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsoleStdout.java" tooltip="sudt/src/cn/sudt/lang/io/ConsoleStdout.java">
+<persistable path="/sudt/src/cn/sudt/lang/io/ConsoleStdout.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SSHShellExcutor.java" tooltip="sudt/src/cn/tool/shell/SSHShellExcutor.java">
-<persistable path="/sudt/src/cn/tool/shell/SSHShellExcutor.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractHostDialog.java" tooltip="sudt/src/cn/sudt/ui/dialog/AbstractHostDialog.java">
+<persistable path="/sudt/src/cn/sudt/ui/dialog/AbstractHostDialog.java"/>
 </file>
 </mruList>
 </workbench>
