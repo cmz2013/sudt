@@ -76,6 +76,7 @@ public class HostInfo implements Serializable {
 	
 	@Override
 	public String toString() {
-		return ip + "\n" + userName + "\n" + passWord;
+		return ip + "\r\n" + port + "\r\n" + 
+				userName + "\r\n" + passWord;
 	}
 }

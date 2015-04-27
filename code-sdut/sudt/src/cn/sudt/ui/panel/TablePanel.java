@@ -29,6 +29,9 @@ import cn.sudt.ui.common.IconContainer;
 public abstract class TablePanel extends JPanel {
 	protected JTable table = SwingFactory.getTable();
 	protected JScrollPane tableScrollPanel = new JScrollPane(table);
+	/*
+	 * 在执行并发任务时，不能再修改主机列表和命令列表 的数据
+	 */
 	protected boolean tableEnabled = true;
 	protected TableUtils tableUtils = new TableUtils();
 	
@@ -82,11 +85,14 @@ public abstract class TablePanel extends JPanel {
 			public void mouseExited(MouseEvent mouseevent) { }
 			public void mouseEntered(MouseEvent mouseevent) { }
 			public void mouseClicked(MouseEvent mouseevent) {
-				setTableMouseListener(mouseevent);
-				if (table.getSelectedRow() >= 0) {
-					if (addBtn.isEnabled()) {
+				
+				if (tableEnabled) {
+					if (table.getSelectedRow() >= 0) {
 						delBtn.setEnabled(true);
 					}
+					setTableMouseListener(mouseevent);
+				} else {
+					table.clearSelection();
 				}
 			}
 		});

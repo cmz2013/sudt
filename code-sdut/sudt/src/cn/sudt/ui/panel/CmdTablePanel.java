@@ -198,10 +198,6 @@ public abstract class CmdTablePanel extends TablePanel {
 	
 	@Override
 	protected void setTableMouseListener(MouseEvent mouseevent) {
-		if (!tableEnabled) {
-			return;
-		}
-		
 		if (getTable().getSelectedRow() >= 0) {
 			cmdInsertBtn.setEnabled(true);
 		}

@@ -84,10 +84,6 @@ public class HostTablePanel extends TablePanel {
 
 	@Override
 	protected void setTableMouseListener(MouseEvent mouseevent) {
-		if (!tableEnabled) {
-			return;
-		}
-		
 		if (mouseevent.getClickCount() >= 2) {
 			if (null == hostUpdateDialog) {
 				hostUpdateDialog = new HostUpdateDialog(getTable());

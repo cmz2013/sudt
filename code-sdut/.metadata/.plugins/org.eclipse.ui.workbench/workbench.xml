@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="33" version="2.0">
 <workbenchAdvisor/>
-<window height="760" maximized="true" width="1001" x="644" y="-19">
+<window height="760" width="1001" x="400" y="8">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="124" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="191" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="55" y="22"/>
@@ -31,7 +31,7 @@
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -39,7 +39,7 @@
 <coolItem id="net.sf.jadclipse.JadclipseClassFileEditor" itemType="typePlaceholder" x="38" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -49,21 +49,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_en.properties" partName="tool_des_en.properties" path="D:/Work/opensource/sudt/code-sdut/sudt/i18/tool_des_en.properties" title="tool_des_en.properties" tooltip="sudt/i18/tool_des_en.properties" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/i18/tool_des_en.properties"/>
-<editorState selectionHorizontalPixel="101" selectionLength="20" selectionOffset="142" selectionTopPixel="0"/>
-</editor>
-<editor id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_zh.properties" partName="tool_des_zh.properties" path="D:/Work/opensource/sudt/code-sdut/sudt/i18/tool_des_zh.properties" title="tool_des_zh.properties" tooltip="sudt/i18/tool_des_zh.properties" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/i18/tool_des_zh.properties"/>
-<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="102" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
@@ -74,6 +63,10 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Errors (3 items)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="314" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="439"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -136,7 +129,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -189,22 +182,31 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7619048" ratioLeft="496" ratioRight="155" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7619048" ratioLeft="496" ratioRight="155" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -212,23 +214,30 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19214876" ratioLeft="93" ratioRight="391" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.8737201" ratioLeft="768" ratioRight="111" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.8737201" ratioLeft="768" ratioRight="111" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="636" ratioRight="636" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.BreakpointView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -368,48 +377,19 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/ui/tab/HelpTabbed.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/deploy/DeployManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/ui/tab/DeployTabbed.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" path="/sudt/i18/tool_des_en.properties"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" path="/sudt/i18/tool_des_zh.properties"/>
-</editors>
-<item historyLabel="DeployThread.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="HelpTabbed.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DeployManager.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="HelpTabbed.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DeployManager.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DeployTabbed.java" index="3">
-<position info="not_deleted" x="5968" y="0"/>
-</item>
-<item historyLabel="tool_des_en.properties" index="4">
-<position info="not_deleted" x="185" y="0"/>
-</item>
-<item historyLabel="tool_des_zh.properties" index="5">
-<position info="not_deleted" x="102" y="7"/>
-</item>
-<item active="true" historyLabel="tool_des_en.properties" index="4">
-<position info="not_deleted" x="185" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -422,50 +402,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_zh.properties" tooltip="sudt/i18/tool_des_zh.properties">
-<persistable path="/sudt/i18/tool_des_zh.properties"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_en.properties" tooltip="sudt/i18/tool_des_en.properties">
-<persistable path="/sudt/i18/tool_des_en.properties"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployTabbed.java" tooltip="sudt/src/cn/sudt/ui/tab/DeployTabbed.java">
-<persistable path="/sudt/src/cn/sudt/ui/tab/DeployTabbed.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployManager.java" tooltip="sudt/src/cn/sudt/deploy/DeployManager.java">
-<persistable path="/sudt/src/cn/sudt/deploy/DeployManager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HelpTabbed.java" tooltip="sudt/src/cn/sudt/ui/tab/HelpTabbed.java">
-<persistable path="/sudt/src/cn/sudt/ui/tab/HelpTabbed.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployThread.java" tooltip="sudt/src/cn/sudt/deploy/DeployThread.java">
-<persistable path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CmdTablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/CmdTablePanel.java">
+<persistable path="/sudt/src/cn/sudt/ui/panel/CmdTablePanel.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/TablePanel.java">
 <persistable path="/sudt/src/cn/sudt/ui/panel/TablePanel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConcurrentController.java" tooltip="sudt/src/cn/sudt/deploy/ConcurrentController.java">
-<persistable path="/sudt/src/cn/sudt/deploy/ConcurrentController.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostTablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/HostTablePanel.java">
+<persistable path="/sudt/src/cn/sudt/ui/panel/HostTablePanel.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CmdTablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/CmdTablePanel.java">
-<persistable path="/sudt/src/cn/sudt/ui/panel/CmdTablePanel.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployManager.java" tooltip="sudt/src/cn/sudt/deploy/DeployManager.java">
+<persistable path="/sudt/src/cn/sudt/deploy/DeployManager.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConsoleFrame.java" tooltip="sudt/src/cn/sudt/ui/frame/ConsoleFrame.java">
-<persistable path="/sudt/src/cn/sudt/ui/frame/ConsoleFrame.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployTabbed.java" tooltip="sudt/src/cn/sudt/ui/tab/DeployTabbed.java">
+<persistable path="/sudt/src/cn/sudt/ui/tab/DeployTabbed.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="AbstractButton.class" tooltip="javax.swing.AbstractButton">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=sudt/D:\/Tool\/jdk\/jdk7-64\/jre\/lib\/rt.jar&lt;javax.swing(AbstractButton.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HelpTabbed.java" tooltip="sudt/src/cn/sudt/ui/tab/HelpTabbed.java">
+<persistable path="/sudt/src/cn/sudt/ui/tab/HelpTabbed.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="JSplitPane.class" tooltip="javax.swing.JSplitPane">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=sudt/D:\/Tool\/jdk\/jdk7-64\/jre\/lib\/rt.jar&lt;javax.swing(JSplitPane.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_en.properties" tooltip="sudt/i18/tool_des_en.properties">
+<persistable path="/sudt/i18/tool_des_en.properties"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SplitPane.java" tooltip="sudt/src/cn/sudt/ui/panel/SplitPane.java">
-<persistable path="/sudt/src/cn/sudt/ui/panel/SplitPane.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AbstractDialog.java" tooltip="sudt/src/cn/sudt/ui/dialog/AbstractDialog.java">
+<persistable path="/sudt/src/cn/sudt/ui/dialog/AbstractDialog.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployTool.java" tooltip="sudt/src/cn/sudt/DeployTool.java">
-<persistable path="/sudt/src/cn/sudt/DeployTool.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="tool_config.xml" tooltip="sudt/tool_config.xml">
+<persistable path="/sudt/tool_config.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BottomlPanel.java" tooltip="sudt/src/cn/sudt/ui/panel/BottomlPanel.java">
-<persistable path="/sudt/src/cn/sudt/ui/panel/BottomlPanel.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostImportDialog.java" tooltip="sudt/src/cn/sudt/ui/dialog/HostImportDialog.java">
+<persistable path="/sudt/src/cn/sudt/ui/dialog/HostImportDialog.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostInfo.java" tooltip="sudt/src/cn/sudt/deploy/scheme/HostInfo.java">
+<persistable path="/sudt/src/cn/sudt/deploy/scheme/HostInfo.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FileOutputDialog.java" tooltip="sudt/src/cn/sudt/ui/dialog/FileOutputDialog.java">
+<persistable path="/sudt/src/cn/sudt/ui/dialog/FileOutputDialog.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" name="tool_des_zh.properties" tooltip="sudt/i18/tool_des_zh.properties">
+<persistable path="/sudt/i18/tool_des_zh.properties"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CryptoUtils.java" tooltip="sudt/src/cn/sudt/lang/io/CryptoUtils.java">
+<persistable path="/sudt/src/cn/sudt/lang/io/CryptoUtils.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostExportDialog.java" tooltip="sudt/src/cn/sudt/ui/dialog/HostExportDialog.java">
+<persistable path="/sudt/src/cn/sudt/ui/dialog/HostExportDialog.java"/>
 </file>
 </mruList>
 </workbench>

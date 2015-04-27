@@ -195,6 +195,7 @@ public class DeployTabbed {
 			cmdTablePanel.getCmdDownBtn().setEnabled(status);
 			cmdTablePanel.getTable().clearSelection();
 			cmdTablePanel.getCmdInsertBtn().setEnabled(status);
+			hostTablePanel.getTable().clearSelection();
 			setButton(cmdTablePanel.getCmdExeBtn(), ToolConfig.i18.getProperty(
 					"sudt.button.pause"), IconContainer.icon_pause);
 		}

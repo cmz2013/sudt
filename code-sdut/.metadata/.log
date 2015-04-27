@@ -11319,3 +11319,47 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-26 23:25:12.316
 !MESSAGE properties loading 'sudt'
+!SESSION 2015-04-27 09:45:25.246 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 09:45:32.547
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 10:00:46.610
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 10:02:49.521
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 10:04:02.576
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 10:04:33.948
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 10:05:13.029
+!MESSAGE properties loading 'sudt'
+!SESSION 2015-04-27 10:20:48.957 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 10:20:56.804
+!MESSAGE properties loading 'sudt'
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-04-27 10:39:06.045
+!MESSAGE No valid Android XML Editor Delegate found for file /sudt/tool_config.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2015-04-27 10:39:14.250
+!MESSAGE No projects found for [D:\Work\opensource\sudt\code-sdut\sudt\tool_config.xml]
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 10:45:40.030
+!MESSAGE properties loading 'sudt'

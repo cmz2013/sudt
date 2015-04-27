@@ -34,6 +34,7 @@ public class DeployTabbed {
 	
 	private ConsoleFrame consoleFrame = null;
 	private DeployManager deployManager = null;
+	private CmdTablePanel cmdTablePanel;
 	
 	public DeployTabbed() {
 		init();
@@ -41,75 +42,14 @@ public class DeployTabbed {
 	}
 	
 	private void initDeployManager() {
-		this.deployManager = new DeployManager(this);
-	}
-	
-	@SuppressWarnings("serial")
-	private CmdTablePanel cmdTablePanel = new CmdTablePanel(){
-
-		@Override
-		public void cmdExeBtnAction() {
-			try {
-				initDeployManager();
-				
-				if (ToolConfig.i18.getProperty("sudt.button.execute"
-						).equals(cmdTablePanel.getCmdExeBtn().getToolTipText())) {
-					
-					if (!cmdTablePanel.getCmdStopBtn().isEnabled()) {
-						
-						if (0 == getHostTablePanel().getTable().getRowCount()) {
-							JOptionPane.showMessageDialog(null, 
-									ToolConfig.i18.getProperty("sudt.deploy.host.null"), 
-									ToolConfig.i18.getProperty("sudt.title.tip"), 
-									JOptionPane.OK_OPTION);
-							return;
-						}
-						
-						if (0 == getCmdTablePanel().getTable().getRowCount()) {
-								JOptionPane.showMessageDialog(null, 
-										ToolConfig.i18.getProperty("sudt.deploy.command.null"), 
-										ToolConfig.i18.getProperty("sudt.title.tip"), 
-										JOptionPane.OK_OPTION);
-								return;
-						}
-						
-						int option = JOptionPane.showConfirmDialog(null, 
-								ToolConfig.i18.getProperty("sudt.deploy.sure"),
-								ToolConfig.i18.getProperty("sudt.title.tip"),
-								JOptionPane.OK_CANCEL_OPTION);
-						
-						if (JOptionPane.OK_OPTION != option) {
-							return;
-						}
-						
-						closeDialog(hostTablePanel.getHostUpdateDialog(),
-								hostTablePanel.getHostAddDialog(), 
-								hostTablePanel.getHostImportDialog(), 
-								cmdTablePanel.getCmdImportDialog(), 
-								cmdTablePanel.getCmdAddDialog(), 
-								cmdTablePanel.getCmdInsetDialog(), 
-								cmdTablePanel.getCmdUpdateDialog());
-						
-						consoleFrame.showConsoleFrame();
-						deployManager.start();
-					} else {
-						deployManager.setPause(false);
-					}
-				} else if (ToolConfig.i18.getProperty("sudt.button.pause"
-						).equals(cmdTablePanel.getCmdExeBtn().getToolTipText())) {
-					setButton(cmdTablePanel.getCmdExeBtn(), ToolConfig.i18.getProperty(
-							"sudt.button.execute"), IconContainer.icon_execute);
-					deployManager.setPause(true);
-				}
-			} catch (Exception e) {
-				JOptionPane.showMessageDialog(null, 
-						e.getMessage(),
-						ToolConfig.i18.getProperty("sudt.title.error"),
-						JOptionPane.WARNING_MESSAGE);
+		if (null != this.deployManager) {
+			if (this.deployManager.getConcurrentController().isEnd()) {
+				this.deployManager = new DeployManager(this);
 			}
+		} else {
+			this.deployManager = new DeployManager(this);
 		}
-		
-	};
+	}
 	
 	/**
 	 * 关闭对话框
@@ -122,13 +62,93 @@ public class DeployTabbed {
 		}
 	}
 	
+	@SuppressWarnings("serial")
 	private void init() {
-		this.deployPanel = new SplitPane(hostTablePanel, cmdTablePanel);
 		this.consoleFrame = new ConsoleFrame();
 		this.hostTablePanel = new HostTablePanel(
 				ToolConfig.i18.getProperty("sudt.host.list"), 
 				ToolConfig.i18.getProperty("sudt.host.port"), 
 				"", "");
+		
+		this.cmdTablePanel = new CmdTablePanel(){
+			@Override
+			public void cmdExeBtnAction() {
+				try {
+					initDeployManager();
+					
+					if (ToolConfig.i18.getProperty("sudt.button.execute"
+							).equals(cmdTablePanel.getCmdExeBtn().getToolTipText())) {
+						
+						if (!cmdTablePanel.getCmdStopBtn().isEnabled()) {
+							
+							if (0 == getHostTablePanel().getTable().getRowCount()) {
+								JOptionPane.showMessageDialog(null, 
+										ToolConfig.i18.getProperty("sudt.deploy.host.null"), 
+										ToolConfig.i18.getProperty("sudt.title.tip"), 
+										JOptionPane.OK_OPTION);
+								return;
+							}
+							
+							if (0 == getCmdTablePanel().getTable().getRowCount()) {
+									JOptionPane.showMessageDialog(null, 
+											ToolConfig.i18.getProperty("sudt.deploy.command.null"), 
+											ToolConfig.i18.getProperty("sudt.title.tip"), 
+											JOptionPane.OK_OPTION);
+									return;
+							}
+							
+							int option = JOptionPane.showConfirmDialog(null, 
+									ToolConfig.i18.getProperty("sudt.deploy.sure"),
+									ToolConfig.i18.getProperty("sudt.title.tip"),
+									JOptionPane.OK_CANCEL_OPTION);
+							
+							if (JOptionPane.OK_OPTION != option) {
+								return;
+							}
+							setBtnStatus(false);
+							
+							closeDialog(hostTablePanel.getHostUpdateDialog(),
+									hostTablePanel.getHostAddDialog(), 
+									hostTablePanel.getHostImportDialog(), 
+									cmdTablePanel.getCmdImportDialog(), 
+									cmdTablePanel.getCmdAddDialog(), 
+									cmdTablePanel.getCmdInsetDialog(), 
+									cmdTablePanel.getCmdUpdateDialog());
+							
+							consoleFrame.showConsoleFrame();
+							deployManager.start();
+						} else {
+							deployManager.setPause(false);
+							setButton(cmdTablePanel.getCmdExeBtn(), ToolConfig.i18.getProperty(
+									"sudt.button.pause"), IconContainer.icon_pause);
+						}
+					} else if (ToolConfig.i18.getProperty("sudt.button.pause"
+							).equals(cmdTablePanel.getCmdExeBtn().getToolTipText())) {
+						setButton(cmdTablePanel.getCmdExeBtn(), ToolConfig.i18.getProperty(
+								"sudt.button.execute"), IconContainer.icon_execute);
+						deployManager.setPause(true);
+					}
+				} catch (Exception e) {
+					JOptionPane.showMessageDialog(null, 
+							e.getMessage(),
+							ToolConfig.i18.getProperty("sudt.title.error"),
+							JOptionPane.WARNING_MESSAGE);
+				}
+			}
+
+			@Override
+			public void cmdStopBtnAction() {
+				this.getCmdStopBtn().setEnabled(false);
+				this.getCmdExeBtn().setEnabled(false);
+				
+				deployManager.setPause(false);
+				deployManager.setInterrupted(true);
+				deployManager.getConcurrentController().interrupt();
+			}
+			
+		};
+		
+		this.deployPanel = new SplitPane(hostTablePanel, cmdTablePanel);
 	}
 
 	private void setButton(JButton btn, String tip, ImageIcon icon) {
@@ -161,10 +181,10 @@ public class DeployTabbed {
 		hostTablePanel.getHostImportBtn().setEnabled(status);
 		cmdTablePanel.getAddBtn().setEnabled(status);
 		cmdTablePanel.getDelBtn().setEnabled(status);
-		cmdTablePanel.getCmdUpBtn().setEnabled(status);
-		cmdTablePanel.getCmdDownBtn().setEnabled(status);
 		cmdTablePanel.getCmdImportBtn().setEnabled(status);
 		bottomPanel.getBusyIconLabel().setEnabled(!status);
+		
+		hostTablePanel.getTable().setS
 		
 		if (status) {
 			setButton(cmdTablePanel.getCmdExeBtn(), ToolConfig.i18.getProperty(
@@ -173,7 +193,11 @@ public class DeployTabbed {
 				cmdTablePanel.getCmdInsertBtn().setEnabled(status);
 			}
 		} else {
+			cmdTablePanel.getCmdUpBtn().setEnabled(status);
+			cmdTablePanel.getCmdDownBtn().setEnabled(status);
+			cmdTablePanel.getTable().clearSelection();
 			cmdTablePanel.getCmdInsertBtn().setEnabled(status);
+			hostTablePanel.getTable().clearSelection();
 			setButton(cmdTablePanel.getCmdExeBtn(), ToolConfig.i18.getProperty(
 					"sudt.button.pause"), IconContainer.icon_pause);
 		}

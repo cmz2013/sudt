@@ -35,23 +35,30 @@ public class HostImportDialog extends FileInputDialog {
 		List<?> objs = null;
 
 		if (encryptCheckBox.isSelected()) {
-			String objStr = new CryptoUtils().decryptFileToString(
-					file, passwordField.getText());
-			if (StringUtils.isBlank(objStr)) {
-				throw new Exception(ToolConfig.i18.getProperty(
-					"sudt.file.password.error"));
-			} else {
-				objs = readObject(objStr);
+			String objStr = null;
+			try {
+				objStr = new CryptoUtils().decryptFileToString(
+						file, passwordField.getText());
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				if (StringUtils.isBlank(objStr)) {
+					throw new Exception(ToolConfig.i18.getProperty(
+						"sudt.file.password.error"));
+				} else {
+					objs = readObject(objStr);
+				}
 			}
 		} else {
 			objs = new ObjectStream().readObject(HostInfo.class, file);
 		}
 		
 		if (objs.size() > 0) {
+			String res = batchInsertHost(objs);
 			hostTablePanel.getHostExportBtn().setEnabled(true);
+			return res;
 		}
-		
-		return batchInsertHost(objs);
+		return null;
 	}
 
 	/**
@@ -63,7 +70,7 @@ public class HostImportDialog extends FileInputDialog {
 	private String batchInsertHost(List<?> objs) {
 		int rowCount = hostTablePanel.getTable().getRowCount();
 		
-		int repeatCount = 0;
+		String repeatHosts = "";
 		for (Object obj : objs) {
 			HostInfo host = (HostInfo) obj;
 			/*
@@ -71,8 +78,11 @@ public class HostImportDialog extends FileInputDialog {
 			 */
 			int i = 0;
 			for (; i < rowCount; i++) {
-				if (hostTablePanel.getTable().getValueAt(i, 0).equals(host.getIp())) {
-					repeatCount++;
+				String ip = hostTablePanel.getTable().getValueAt(i, 0) + "";
+				String port = hostTablePanel.getTable().getValueAt(i, 1) + "";
+				
+				if (ip.equals(host.getIp()) && port.equals(host.getPort() + "")) {
+					repeatHosts += (ip + ":" + port) + ", ";
 					break;
 				}
 			}
@@ -81,14 +91,16 @@ public class HostImportDialog extends FileInputDialog {
 				hostTablePanel.getTableUtils().appendRow(
 						hostTablePanel.getTable(), 
 						host.getIp(), 
+						host.getPort(),
 						host.getUserName(), 
 						host.getPassWord());
 			}	
 		} 
 		
-		if (repeatCount > 0) {
-			return String.format(ToolConfig.i18.getProperty(
-				"sudt.host.list.repeat"), repeatCount);
+		if (!"".equals(repeatHosts)) {
+			return String.format(
+					ToolConfig.i18.getProperty("sudt.host.list.repeat"), 
+					repeatHosts.substring(0, repeatHosts.length() - 2));
 		} else {
 			return null;
 		}
@@ -104,7 +116,7 @@ public class HostImportDialog extends FileInputDialog {
 		List<HostInfo> objs = new ArrayList<HostInfo>();
 		String[] hosts = objStr.split("\r\n");
 		for (String host : hosts) {
-			String[] args = host.split("\n");
+			String[] args = host.split("\r\n");
 			HostInfo hostInfo = new HostInfo(
 				args[0], Integer.parseInt(args[1]), args[2], args[3]);
 			objs.add(hostInfo);
