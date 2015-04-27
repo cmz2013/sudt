@@ -144,7 +144,8 @@ public class HelpTabbed {
 				"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip8") + 
 				"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip9") + 
 				"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip10") + 
-        		"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip11"));
+        		"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip11") +
+        		"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip12"));
         
         return treeIndex;
 	}

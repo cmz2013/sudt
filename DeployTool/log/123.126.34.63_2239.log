@@ -1,0 +1,6 @@
+2015-04-27 15:01:50,458 [123.126.34.63:2239] INFO  - Being deploy:123.126.34.63:2239 ... 
+2015-04-27 15:01:51,628 [123.126.34.63:2239] INFO  - ps -ef|grep java
+ctcrm     3392  3369  0 15:02 pts/0    00:00:00 grep java
+ctcrm    11734 11732  3 Apr24 ?        03:18:16 /app/ctcrm/product-eos/jdk/bin/java -Xms1024m -Xmx3096m -XX:MaxPermSize=1024m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/app/ctcrm/apache-tomcat-6.0.37/conf/logging.properties -DEXTERNAL_CONFIG_DIR=/app/ctcrm/product-eos/apps_config -Djava.endorsed.dirs=/app/ctcrm/apache-tomcat-6.0.37/common/endorsed -classpath /app/ctcrm/product-eos/jdk/lib/tools.jar:/app/ctcrm/apache-tomcat-6.0.37/bin/bootstrap.jar: -Dcatalina.base=/app/ctcrm/apache-tomcat-6.0.37 -Djava.net.preferIPv4Stack=true -Djava.awt.headless=true -Dcatalina.home=/app/ctcrm/apache-tomcat-6.0.37 -Djava.io.tmpdir=/app/ctcrm/apache-tomcat-6.0.37/temp org.apache.catalina.startup.Bootstrap start
+[ctcrm@ctc_crm_inweb3 ~]$
+2015-04-27 15:01:51,628 [123.126.34.63:2239] INFO  - 123.126.34.63 deployment completed successfully!

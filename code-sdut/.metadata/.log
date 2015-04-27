@@ -11379,3 +11379,143 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 14:21:15.234
 !MESSAGE properties loading 'sudt'
+!SESSION 2015-04-27 16:39:29.273 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:39:36.698
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:41:40.836
+!MESSAGE properties loading 'sudt'
+!SESSION 2015-04-27 16:50:47.651 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:50:54.312
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:51:46.182
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:52:23.681
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:52:27.924
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:52:52.874
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:54:39.283
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:55:16.583
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:56:19.529
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:58:20.810
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:59:17.230
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 16:59:50.253
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:00:37.088
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:03:55.567
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:07:52.054
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:09:25.774
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:13:05.221
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:14:54.405
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:15:39.379
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:15:44.964
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:16:29.396
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:17:40.924
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:21:39.819
+!MESSAGE properties loading 'sudt'
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-04-27 17:21:56.854
+!MESSAGE No valid Android XML Editor Delegate found for file /sudt/tool_config.xml [Res null, type null]
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:22:20.115
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:22:37.478
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:23:12.907
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:23:25.060
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:24:37.995
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:24:43.018
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:27:04.477
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:27:10.701
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:28:20.637
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:28:41.525
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:29:03.411
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:29:13.629
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:29:34.952
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:29:45.981
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:31:45.643
+!MESSAGE properties loading 'sudt'
+
+!ENTRY jp.gr.java_conf.ussiy.app.propedit 1 0 2015-04-27 17:32:01.121
+!MESSAGE properties loading 'sudt'
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2015-04-27 17:32:13.064
+!MESSAGE No valid Android XML Editor Delegate found for file /sudt/tool_config.xml [Res null, type null]
