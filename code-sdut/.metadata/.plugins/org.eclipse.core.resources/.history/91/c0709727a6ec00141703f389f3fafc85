@@ -83,18 +83,12 @@ public class HostImportDialog extends FileInputDialog {
 				
 				if (ip.equals(host.getIp()) && port.equals(host.getPort() + "")) {
 					int option = JOptionPane.showConfirmDialog(null, 
-							String.format(ToolConfig.i18.getProperty("sudt.host.list.repeat"), 
-									host.getIp() + ":" + host.getPort()),
+							ToolConfig.i18.getProperty("sudt.host.list.repeat"),
 							ToolConfig.i18.getProperty("sudt.title.tip"),
 							JOptionPane.OK_CANCEL_OPTION);
 					
 					if (JOptionPane.OK_OPTION == option) {
-						hostTablePanel.getTableUtils().updateRow(
-								hostTablePanel.getTable(), i,
-								host.getIp(), 
-								host.getPort() + "",
-								host.getUserName(), 
-								host.getPassWord());
+						
 					}
 					
 					break;

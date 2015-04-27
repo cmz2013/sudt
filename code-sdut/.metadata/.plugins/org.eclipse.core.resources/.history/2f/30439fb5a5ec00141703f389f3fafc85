@@ -4,8 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.JOptionPane;
-
 import org.apache.commons.lang.StringUtils;
 
 import cn.sudt.config.ToolConfig;
@@ -56,8 +54,9 @@ public class HostImportDialog extends FileInputDialog {
 		}
 		
 		if (objs.size() > 0) {
-			batchInsertHost(objs);
+			String res = batchInsertHost(objs);
 			hostTablePanel.getHostExportBtn().setEnabled(true);
+			return res;
 		}
 		return null;
 	}
@@ -82,21 +81,7 @@ public class HostImportDialog extends FileInputDialog {
 				String port = hostTablePanel.getTable().getValueAt(i, 1) + "";
 				
 				if (ip.equals(host.getIp()) && port.equals(host.getPort() + "")) {
-					int option = JOptionPane.showConfirmDialog(null, 
-							String.format(ToolConfig.i18.getProperty("sudt.host.list.repeat"), 
-									host.getIp() + ":" + host.getPort()),
-							ToolConfig.i18.getProperty("sudt.title.tip"),
-							JOptionPane.OK_CANCEL_OPTION);
-					
-					if (JOptionPane.OK_OPTION == option) {
-						hostTablePanel.getTableUtils().updateRow(
-								hostTablePanel.getTable(), i,
-								host.getIp(), 
-								host.getPort() + "",
-								host.getUserName(), 
-								host.getPassWord());
-					}
-					
+					repeatHosts += (ip + ":" + port) + ", ";
 					break;
 				}
 			}

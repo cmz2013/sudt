@@ -24,10 +24,10 @@ public class HostUpdateDialog extends AbstractHostDialog {
 	public void initDialogData() {
 		int selRow = hostList.getSelectedRow();
 		DefaultTableModel tableModel = (DefaultTableModel) hostList.getModel();
-		this.ipField.setText(tableModel.getValueAt(selRow, 0) + "");
-		this.portField.setText(tableModel.getValueAt(selRow, 1) + "");
-		this.userField.setText(tableModel.getValueAt(selRow, 2) + "");
-		this.pasField.setText(tableModel.getValueAt(selRow, 3) + "");
+		this.ipField.setText((String) tableModel.getValueAt(selRow, 0));
+		this.portField.setText((String) tableModel.getValueAt(selRow, 1));
+		this.userField.setText((String) tableModel.getValueAt(selRow, 2));
+		this.pasField.setText((String) tableModel.getValueAt(selRow, 3));
 	}
 
 	@Override
