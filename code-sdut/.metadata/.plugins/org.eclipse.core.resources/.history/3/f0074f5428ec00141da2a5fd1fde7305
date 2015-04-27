@@ -21,7 +21,7 @@ sudt.deploy=Deployment
 sudt.deploy.end=The deployment has been completed! Click on the "Log" view detailed information.
 sudt.deploy.interrupt=The deploy process is interrupted.
 sudt.deploy.pause=The deploy process is paused.
-sudt.deploy.host.null=The host list cannot be empty.
+sudt.deploy.host.null=The host cannot be empty.
 sudt.deploy.command.null=The command list cannot be empty.
 sudt.deploy.sure=Are you sure you want to start the deployment? Note: During the deployment, can't modify the data.
 

@@ -2,7 +2,7 @@ sudt.title=Software Deployment Management Platform
 sudt.title.error=Error
 sudt.title.confirm=Confirm
 sudt.title.tip=Tip
-sudt.exit.confirm=Really want to exit?
+sudt.exit.confirm=Exit Tool?
 
 sudt.button.add=Add
 sudt.button.delete=Delete
