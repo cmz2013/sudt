@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.JTabbedPane"/>
 <fullyQualifiedTypeName name="javax.swing.table.TableColumnModel"/>
 <fullyQualifiedTypeName name="javax.swing.table.TableColumn"/>
 <fullyQualifiedTypeName name="javax.swing.table.TableCellRenderer"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="cn.sudt.lang.swing.TableUtils"/>
 <fullyQualifiedTypeName name="cn.sudt.lang.io.MD5Utils"/>
+<fullyQualifiedTypeName name="cn.sudt.config.ToolConfig"/>
 </qualifiedTypeNameHistroy>
