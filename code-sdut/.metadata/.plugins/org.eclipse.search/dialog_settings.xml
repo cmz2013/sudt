@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="">
-		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
+		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
+		<item value="1000" key="org.eclipse.jdt.search.resultpage.limit"/>
 	</section>
 	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
 		<item value="TRUE" key="org.eclipse.jdt.search.resultpage.limit_enabled"/>
@@ -13,8 +14,8 @@
 	<section name="DialogBounds_SearchDialog">
 		<item value="559" key="DIALOG_WIDTH"/>
 		<item value="192" key="DIALOG_Y_ORIGIN"/>
-		<item value="478" key="DIALOG_HEIGHT"/>
 		<item value="540" key="DIALOG_X_ORIGIN"/>
+		<item value="478" key="DIALOG_HEIGHT"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="Search">
@@ -58,9 +59,6 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="EXTENSIONS">
-			<item value="*" key="0"/>
-		</section>
 		<section name="HISTORY2">
 			<item value="false" key="isRegExSearch"/>
 			<item value="sudt.tip" key="textPattern"/>
@@ -71,6 +69,9 @@
 			</list>
 			<list key="workingSets">
 			</list>
+		</section>
+		<section name="EXTENSIONS">
+			<item value="*" key="0"/>
 		</section>
 		<section name="HISTORY3">
 			<item value="false" key="isRegExSearch"/>
@@ -83,9 +84,9 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY10">
+		<section name="HISTORY0">
 			<item value="false" key="isRegExSearch"/>
-			<item value="soft.deploy.tool.button.delete" key="textPattern"/>
+			<item value="busy" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -94,9 +95,9 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY0">
+		<section name="HISTORY10">
 			<item value="false" key="isRegExSearch"/>
-			<item value="busy" key="textPattern"/>
+			<item value="soft.deploy.tool.button.delete" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">

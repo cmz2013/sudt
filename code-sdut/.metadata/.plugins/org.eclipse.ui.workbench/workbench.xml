@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="32" version="2.0">
+<workbench progressCount="31" version="2.0">
 <workbenchAdvisor/>
-<window height="760" width="1001" x="260" y="0">
+<window height="760" maximized="true" width="1001" x="260" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="191" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="124" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="55" y="22"/>
@@ -31,7 +31,7 @@
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -40,7 +40,7 @@
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="jp.gr.java_conf.ussiy.app.propedit.editors.PropertiesEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -49,15 +49,30 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployThread.java" partName="DeployThread.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/sudt/deploy/DeployThread.java" title="DeployThread.java" tooltip="sudt/src/cn/sudt/deploy/DeployThread.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1370" selectionTopPixel="551"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandLine.java" partName="CommandLine.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/sudt/deploy/scheme/CommandLine.java" title="CommandLine.java" tooltip="sudt/src/cn/sudt/deploy/scheme/CommandLine.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/sudt/deploy/scheme/CommandLine.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="388" selectionTopPixel="247"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CmdTablePanel.java" partName="CmdTablePanel.java" path="D:/Work/opensource/sudt/code-sdut/sudt/src/cn/sudt/ui/panel/CmdTablePanel.java" title="CmdTablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/CmdTablePanel.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/sudt/src/cn/sudt/ui/panel/CmdTablePanel.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3497" selectionTopPixel="1634"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
-<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
 </view>
@@ -125,7 +140,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -319,7 +334,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.32619926" ratioLeft="442" ratioRight="913" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.6542811" ratioLeft="405" ratioRight="214" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.search.ui.views.SearchView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -357,19 +372,46 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/deploy/scheme/CommandLine.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/ui/dialog/CmdImportDialog.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/sudt/src/cn/sudt/ui/panel/CmdTablePanel.java"/>
+</editors>
+<item historyLabel="DeployThread.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DeployThread.java" index="0">
+<position info="not_deleted" x="1370" y="0"/>
+</item>
+<item historyLabel="CommandLine.java" index="1">
+<position info="not_deleted" x="799" y="7"/>
+</item>
+<item historyLabel="CommandLine.java" index="1">
+<position info="not_deleted" x="823" y="0"/>
+</item>
+<item historyLabel="CommandLine.java" index="1">
+<position info="not_deleted" x="388" y="11"/>
+</item>
+<item historyLabel="CmdImportDialog.java" index="2">
+<position info="not_deleted" x="1862" y="94"/>
+</item>
+<item historyLabel="CmdTablePanel.java" index="3">
+<position info="not_deleted" x="1957" y="0"/>
+</item>
+<item historyLabel="CmdTablePanel.java" index="3">
+<position info="not_deleted" x="3760" y="11"/>
+</item>
+<item active="true" historyLabel="CmdTablePanel.java" index="3">
+<position info="not_deleted" x="3909" y="158"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="right"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -382,6 +424,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CmdImportDialog.java" tooltip="sudt/src/cn/sudt/ui/dialog/CmdImportDialog.java">
+<persistable path="/sudt/src/cn/sudt/ui/dialog/CmdImportDialog.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandLine.java" tooltip="sudt/src/cn/sudt/deploy/scheme/CommandLine.java">
+<persistable path="/sudt/src/cn/sudt/deploy/scheme/CommandLine.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployThread.java" tooltip="sudt/src/cn/sudt/deploy/DeployThread.java">
+<persistable path="/sudt/src/cn/sudt/deploy/DeployThread.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="tool_config.xml" tooltip="sudt/tool_config.xml">
 <persistable path="/sudt/tool_config.xml"/>
 </file>
@@ -417,15 +468,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/TablePanel.java">
 <persistable path="/sudt/src/cn/sudt/ui/panel/TablePanel.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostTablePanel.java" tooltip="sudt/src/cn/sudt/ui/panel/HostTablePanel.java">
-<persistable path="/sudt/src/cn/sudt/ui/panel/HostTablePanel.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeployManager.java" tooltip="sudt/src/cn/sudt/deploy/DeployManager.java">
-<persistable path="/sudt/src/cn/sudt/deploy/DeployManager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HostInfo.java" tooltip="sudt/src/cn/sudt/deploy/scheme/HostInfo.java">
-<persistable path="/sudt/src/cn/sudt/deploy/scheme/HostInfo.java"/>
 </file>
 </mruList>
 </workbench>

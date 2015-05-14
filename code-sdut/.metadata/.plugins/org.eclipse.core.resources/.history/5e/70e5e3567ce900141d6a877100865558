@@ -1,5 +1,0 @@
-package cn.sudt.ui.common;
-
-public enum InfoType {
-	info, error
-}

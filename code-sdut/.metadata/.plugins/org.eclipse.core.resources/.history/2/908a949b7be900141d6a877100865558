@@ -1,5 +1,0 @@
-package cn.tool.ui.common;
-
-public enum InfoType {
-	info, error
-}

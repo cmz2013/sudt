@@ -1,7 +1,44 @@
-2015-04-27 15:04:25,398 [123.126.34.63:522] INFO  - 开始部署：123.126.34.63:522 ... 
-2015-04-27 15:04:26,583 [123.126.34.63:522] INFO  - cd /app
-[root@crmdev app]#
-2015-04-27 15:04:27,098 [123.126.34.63:522] INFO  - pwd
-/app
-[root@crmdev app]#
-2015-04-27 15:04:27,098 [123.126.34.63:522] INFO  - 123.126.34.63 部署成功！
+2015-05-06 16:32:10,787 [123.126.34.63:522] INFO  - 开始部署：123.126.34.63:522 ... 
+2015-05-06 16:32:12,454 [123.126.34.63:522] INFO  - pwd
+/root
+[root@crmdev ~]#
+2015-05-06 16:32:12,457 [123.126.34.63:522] INFO  - 123.126.34.63 部署成功！
+2015-05-11 13:59:24,687 [123.126.34.63:522] INFO  - 开始部署：123.126.34.63:522 ... 
+2015-05-11 13:59:26,091 [123.126.34.63:522] INFO  - cd /
+[root@crmdev /]#
+2015-05-11 13:59:26,606 [123.126.34.63:522] INFO  - pwd
+/
+[root@crmdev /]#
+2015-05-11 13:59:27,121 [123.126.34.63:522] INFO  - ps -ef |grep java
+root      8301     1  0 May07 ?        00:28:39 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/bin/java -Djava.util.logging.config.file=/app/tomcattmp/conf/logging.properties -server -Xms256m -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.endorsed.dirs=/app/tomcattmp/endorsed -classpath /app/tomcattmp/bin/bootstrap.jar -Dcatalina.base=/app/tomcattmp -Dcatalina.home=/app/tomcattmp -Djava.io.tmpdir=/app/tomcattmp/temp org.apache.catalina.startup.Bootstrap start
+root     14852 14850  0 May07 ?        00:26:18 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/bin/java -Xms1024m -Xmx2048m -XX:MaxPermSize=1024m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/app/eos72/apache-tomcat-7.0.54/conf/logging.properties -DEXTERNAL_CONFIG_DIR=/app/eos72/apps_config -Djava.endorsed.dirs=/app/eos72/apache-tomcat-7.0.54/common/endorsed -classpath /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/tools.jar:/app/eos72/apache-tomcat-7.0.54/bin/bootstrap.jar:/app/eos72/apache-tomcat-7.0.54/bin/tomcat-juli.jar: -Dcatalina.base=/app/eos72/apache-tomcat-7.0.54 -Djava.net.preferIPv4Stack=true -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false -Djava.awt.headless=true -Dcatalina.home=/app/eos72/apache-tomcat-7.0.54 -Djava.io.tmpdir=/app/eos72/apache-tomcat-7.0.54/temp org.apache.catalina.startup.Bootstrap start
+root     20677 20657  0 13:59 pts/1    00:00:00 grep java
+root     21897 21895  1 May08 ?        01:08:39 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/bin/java -Xms1024m -Xmx2048m -XX:MaxPermSize=1024m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/app/eos72/apache-tomcat-7.0.54/conf/logging.properties -DEXTERNAL_CONFIG_DIR=/app/eos72/apps_config -Djava.endorsed.dirs=/app/eos72/apache-tomcat-7.0.54/common/endorsed -classpath /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/tools.jar:/app/eos72/apache-tomcat-7.0.54/bin/bootstrap.jar:/app/eos72/apache-tomcat-7.0.54/bin/tomcat-juli.jar: -Dcatalina.base=/app/eos72/apache-tomcat-7.0.54 -Djava.net.preferIPv4Stack=true -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false -Djava.awt.headless=true -Dcatalina.home=/app/eos72/apache-tomcat-7.0.54 -Djava.io.tmpdir=/app/eos72/apache-tomcat-7.0.54/temp org.apache.catalina.startup.Bootstrap start
+[root@crmdev /]#
+2015-05-11 13:59:27,121 [123.126.34.63:522] INFO  - 123.126.34.63 部署成功！
+2015-05-11 14:04:33,334 [123.126.34.63:522] INFO  - 开始部署：123.126.34.63:522 ... 
+2015-05-11 14:04:34,535 [123.126.34.63:522] INFO  - cd /
+[root@crmdev /]#
+2015-05-11 14:04:38,061 [123.126.34.63:522] INFO  - pwd
+/
+[root@crmdev /]#
+2015-05-11 14:04:38,575 [123.126.34.63:522] INFO  - ps -ef |grep java
+root      8301     1  0 May07 ?        00:28:40 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/bin/java -Djava.util.logging.config.file=/app/tomcattmp/conf/logging.properties -server -Xms256m -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.endorsed.dirs=/app/tomcattmp/endorsed -classpath /app/tomcattmp/bin/bootstrap.jar -Dcatalina.base=/app/tomcattmp -Dcatalina.home=/app/tomcattmp -Djava.io.tmpdir=/app/tomcattmp/temp org.apache.catalina.startup.Bootstrap start
+root     14852 14850  0 May07 ?        00:26:18 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/bin/java -Xms1024m -Xmx2048m -XX:MaxPermSize=1024m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/app/eos72/apache-tomcat-7.0.54/conf/logging.properties -DEXTERNAL_CONFIG_DIR=/app/eos72/apps_config -Djava.endorsed.dirs=/app/eos72/apache-tomcat-7.0.54/common/endorsed -classpath /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/tools.jar:/app/eos72/apache-tomcat-7.0.54/bin/bootstrap.jar:/app/eos72/apache-tomcat-7.0.54/bin/tomcat-juli.jar: -Dcatalina.base=/app/eos72/apache-tomcat-7.0.54 -Djava.net.preferIPv4Stack=true -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false -Djava.awt.headless=true -Dcatalina.home=/app/eos72/apache-tomcat-7.0.54 -Djava.io.tmpdir=/app/eos72/apache-tomcat-7.0.54/temp org.apache.catalina.startup.Bootstrap start
+root     20756 20737  0 14:04 pts/1    00:00:00 grep java
+root     21897 21895  1 May08 ?        01:08:45 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/bin/java -Xms1024m -Xmx2048m -XX:MaxPermSize=1024m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/app/eos72/apache-tomcat-7.0.54/conf/logging.properties -DEXTERNAL_CONFIG_DIR=/app/eos72/apps_config -Djava.endorsed.dirs=/app/eos72/apache-tomcat-7.0.54/common/endorsed -classpath /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/tools.jar:/app/eos72/apache-tomcat-7.0.54/bin/bootstrap.jar:/app/eos72/apache-tomcat-7.0.54/bin/tomcat-juli.jar: -Dcatalina.base=/app/eos72/apache-tomcat-7.0.54 -Djava.net.preferIPv4Stack=true -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false -Djava.awt.headless=true -Dcatalina.home=/app/eos72/apache-tomcat-7.0.54 -Djava.io.tmpdir=/app/eos72/apache-tomcat-7.0.54/temp org.apache.catalina.startup.Bootstrap start
+[root@crmdev /]#
+2015-05-11 14:04:38,575 [123.126.34.63:522] INFO  - 123.126.34.63 部署成功！
+2015-05-11 14:05:03,099 [123.126.34.63:522] INFO  - 开始部署：123.126.34.63:522 ... 
+2015-05-11 14:05:04,643 [123.126.34.63:522] INFO  - cd /
+[root@crmdev /]#
+2015-05-11 14:05:08,169 [123.126.34.63:522] INFO  - pwd
+/
+[root@crmdev /]#
+2015-05-11 14:05:08,683 [123.126.34.63:522] INFO  - ps -ef |grep java
+root      8301     1  0 May07 ?        00:28:40 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/bin/java -Djava.util.logging.config.file=/app/tomcattmp/conf/logging.properties -server -Xms256m -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.endorsed.dirs=/app/tomcattmp/endorsed -classpath /app/tomcattmp/bin/bootstrap.jar -Dcatalina.base=/app/tomcattmp -Dcatalina.home=/app/tomcattmp -Djava.io.tmpdir=/app/tomcattmp/temp org.apache.catalina.startup.Bootstrap start
+root     14852 14850  0 May07 ?        00:26:18 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/bin/java -Xms1024m -Xmx2048m -XX:MaxPermSize=1024m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/app/eos72/apache-tomcat-7.0.54/conf/logging.properties -DEXTERNAL_CONFIG_DIR=/app/eos72/apps_config -Djava.endorsed.dirs=/app/eos72/apache-tomcat-7.0.54/common/endorsed -classpath /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/tools.jar:/app/eos72/apache-tomcat-7.0.54/bin/bootstrap.jar:/app/eos72/apache-tomcat-7.0.54/bin/tomcat-juli.jar: -Dcatalina.base=/app/eos72/apache-tomcat-7.0.54 -Djava.net.preferIPv4Stack=true -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false -Djava.awt.headless=true -Dcatalina.home=/app/eos72/apache-tomcat-7.0.54 -Djava.io.tmpdir=/app/eos72/apache-tomcat-7.0.54/temp org.apache.catalina.startup.Bootstrap start
+root     20785 20764  0 14:05 pts/1    00:00:00 grep java
+root     21897 21895  1 May08 ?        01:08:46 /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/bin/java -Xms1024m -Xmx2048m -XX:MaxPermSize=1024m -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/app/eos72/apache-tomcat-7.0.54/conf/logging.properties -DEXTERNAL_CONFIG_DIR=/app/eos72/apps_config -Djava.endorsed.dirs=/app/eos72/apache-tomcat-7.0.54/common/endorsed -classpath /usr/lib/jvm/java-1.6.0-openjdk-1.6.0.0.x86_64/jre/lib/tools.jar:/app/eos72/apache-tomcat-7.0.54/bin/bootstrap.jar:/app/eos72/apache-tomcat-7.0.54/bin/tomcat-juli.jar: -Dcatalina.base=/app/eos72/apache-tomcat-7.0.54 -Djava.net.preferIPv4Stack=true -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false -Djava.awt.headless=true -Dcatalina.home=/app/eos72/apache-tomcat-7.0.54 -Djava.io.tmpdir=/app/eos72/apache-tomcat-7.0.54/temp org.apache.catalina.startup.Bootstrap start
+[root@crmdev /]#
+2015-05-11 14:05:08,683 [123.126.34.63:522] INFO  - 123.126.34.63 部署成功！

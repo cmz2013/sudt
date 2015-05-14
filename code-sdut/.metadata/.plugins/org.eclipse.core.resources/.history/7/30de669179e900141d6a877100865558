@@ -1,5 +1,0 @@
-package cn.tool.ui.resour;
-
-public enum InfoType {
-
-}
