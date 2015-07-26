@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.table.TableColumnModel"/>
-<fullyQualifiedTypeName name="javax.swing.table.TableColumn"/>
-<fullyQualifiedTypeName name="javax.swing.table.TableCellRenderer"/>
-<fullyQualifiedTypeName name="java.awt.Component"/>
-<fullyQualifiedTypeName name="javax.swing.ScrollPaneConstants"/>
 <fullyQualifiedTypeName name="cn.tool.lang.swing.TableUtils"/>
-<fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="cn.tool.ui.tab.DeployTab"/>
 <fullyQualifiedTypeName name="cn.tool.deploy.DaemonDeploy"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang.Validate"/>
@@ -28,12 +22,8 @@
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="javax.swing.JList"/>
 <fullyQualifiedTypeName name="javax.swing.JTree"/>
-<fullyQualifiedTypeName name="javax.swing.JTextPane"/>
-<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
-<fullyQualifiedTypeName name="java.awt.GridLayout"/>
 <fullyQualifiedTypeName name="javax.swing.tree.DefaultMutableTreeNode"/>
 <fullyQualifiedTypeName name="javax.swing.JSplitPane"/>
-<fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseEvent"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
@@ -60,4 +50,14 @@
 <fullyQualifiedTypeName name="cn.sudt.lang.swing.TableUtils"/>
 <fullyQualifiedTypeName name="cn.sudt.lang.io.MD5Utils"/>
 <fullyQualifiedTypeName name="cn.sudt.config.ToolConfig"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="javax.swing.JTextPane"/>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="cn.sudt.ui.panel.TextPane"/>
+<fullyQualifiedTypeName name="javax.swing.UIManager"/>
+<fullyQualifiedTypeName name="javax.swing.plaf.SplitPaneUI"/>
+<fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
+<fullyQualifiedTypeName name="javax.swing.ScrollPaneConstants"/>
 </qualifiedTypeNameHistroy>

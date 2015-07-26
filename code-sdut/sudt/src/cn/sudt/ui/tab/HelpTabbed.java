@@ -1,8 +1,11 @@
 package cn.sudt.ui.tab;
 
+import java.awt.BorderLayout;
+import java.awt.Font;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTextPane;
@@ -14,7 +17,7 @@ import javax.swing.tree.DefaultTreeCellRenderer;
 
 import cn.sudt.config.ToolConfig;
 import cn.sudt.ui.common.IconContainer;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 
 
 /**
@@ -24,6 +27,9 @@ import cn.sudt.ui.common.UiConst;
  *
  */
 public class HelpTabbed {
+	
+	private JTree tree;
+	
 	private DefaultMutableTreeNode useHelpNode = new DefaultMutableTreeNode(
 				ToolConfig.i18.getProperty("sudt.help.use"), true);
 	private DefaultMutableTreeNode hostList = new DefaultMutableTreeNode(
@@ -45,9 +51,11 @@ public class HelpTabbed {
 			ToolConfig.i18.getProperty("sudt.help.contact"));
 	private DefaultMutableTreeNode setup = new DefaultMutableTreeNode(
 			ToolConfig.i18.getProperty("sudt.help.tool.setup"));
-	private JTextPane textPane = new JTextPane();
+	
 	private JSplitPane helpPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
-	private JTree tree;
+	private JPanel textPane = new JPanel();
+	private JTextPane titlePane = new JTextPane();
+	private JTextPane contextPane = new JTextPane();
 	
 	public HelpTabbed() throws Exception {
 		setLayout();
@@ -61,7 +69,8 @@ public class HelpTabbed {
 			@Override
 			public void valueChanged(TreeSelectionEvent e) {
 				String key = e.getPath().getLastPathComponent() + "";
-				textPane.setText(nodeText.get(key));
+				titlePane.setText(key);
+				contextPane.setText(nodeText.get(key));
 			}
 		});
 	}
@@ -123,17 +132,14 @@ public class HelpTabbed {
         treeIndex.put(aboutToolNode.getUserObject() + "", 
         		ToolConfig.i18.getProperty("sudt.help.about.root"));
         treeIndex.put(download.getUserObject() + "", 
-        		ToolConfig.i18.getProperty("sudt.help.code.download") +
-        		"\n" + ToolConfig.i18.getProperty("sudt.help.code.download.url"));
+        		ToolConfig.i18.getProperty("sudt.help.code.download.url"));
         treeIndex.put(contact.getUserObject() + "", 
-        		ToolConfig.i18.getProperty("sudt.help.contact") +
-				"\n" + ToolConfig.i18.getProperty("sudt.help.contact.writer") + 
+        		ToolConfig.i18.getProperty("sudt.help.contact.writer") + 
 				"\n" + ToolConfig.i18.getProperty("sudt.help.contact.email") + 
         		"\n" + ToolConfig.i18.getProperty("sudt.help.contact.qq"));
         
         treeIndex.put(setup.getUserObject() + "", 
-        		ToolConfig.i18.getProperty("sudt.help.tool.setup") +
-				"\n" + String.format(ToolConfig.i18.getProperty(
+        		String.format(ToolConfig.i18.getProperty(
 						"sudt.help.tool.setup.tip1"), ToolConfig.USER_DIR) + 
 				"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip2") + 
 				"\n" + ToolConfig.i18.getProperty("sudt.help.tool.setup.tip3") + 
@@ -161,6 +167,21 @@ public class HelpTabbed {
 		
 		aboutToolNode.add(download);
 		aboutToolNode.add(contact);
+		
+		textPane.setLayout(new BorderLayout());
+		Font titleFont = new Font(
+				titlePane.getFont().getFontName(), 
+				Font.BOLD, 
+				titlePane.getFont().getSize() + 2);
+		titlePane.setFont(titleFont);
+		titlePane.setEditable(false);
+		titlePane.setText(ToolConfig.i18.getProperty("sudt.help.use"));
+		textPane.add(titlePane, BorderLayout.NORTH);
+		
+		contextPane.setEditable(false);
+		contextPane.setText(ToolConfig.i18.getProperty("sudt.help.use.root"));
+		textPane.add(contextPane, BorderLayout.CENTER);
+		
 		DefaultMutableTreeNode treeRoot = new DefaultMutableTreeNode();
 		renderer.setLeafIcon(IconContainer.icon_help_item);
 		renderer.setOpenIcon(IconContainer.icon_help);
@@ -169,17 +190,13 @@ public class HelpTabbed {
 		treeRoot.add(aboutToolNode);
 		tree = new JTree(treeRoot);
 		tree.setSelectionPath(tree.getPathForRow(1));
-		textPane.setText(ToolConfig.i18.getProperty("sudt.help.use.root"));
 		tree.setRootVisible(false);
 		tree.setCellRenderer(renderer);
-		helpPane.setDividerLocation(new Double(UiConst.FRAME_WIDTH/3.8).intValue());
+		helpPane.setDividerSize(1);
+		helpPane.setDividerLocation(UIConst.FRAME_WIDTH/4);
 		helpPane.add(new JScrollPane(tree));
-		JScrollPane jsp = new JScrollPane(textPane);
-		jsp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		jsp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
-		helpPane.add(jsp);
+		helpPane.add(textPane);
 		helpPane.setEnabled(false);
-		textPane.setEditable(false);
 	}
 
 	public JSplitPane getHelpPane() {

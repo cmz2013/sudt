@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="273" key="DIALOG_WIDTH"/>
-		<item value="300" key="DIALOG_Y_ORIGIN"/>
-		<item value="895" key="DIALOG_X_ORIGIN"/>
+		<item value="291" key="DIALOG_Y_ORIGIN"/>
 		<item value="384" key="DIALOG_HEIGHT"/>
+		<item value="999" key="DIALOG_X_ORIGIN"/>
 		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="sudt.help.tool.setup.tip11" key="selection"/>
+		<item value="sudt.help.use.root" key="selection"/>
 		<list key="findhistory">
-			<item value="sudt.help.tool.setup.tip11"/>
-			<item value="sudt.help.tool.setup.tip8"/>
-			<item value="sudt.help.tool.setup.tip4"/>
-			<item value="sudt.help.toolbar.add"/>
-			<item value="sudt.help.toolbar.del"/>
-			<item value="弹出删除确认对话框"/>
-			<item value="删除"/>
-			<item value="sudt.help.toolbar.insert"/>
+			<item value="sudt.help.use.root"/>
+			<item value="并发"/>
+			<item value="sudt.help.tool.setup.tip2"/>
+			<item value="sudt.help.toolbar.execute"/>
+			<item value="部署过程"/>
+			<item value="并发部署过程"/>
+			<item value="sudt.help.tool.setup.tip7"/>
+			<item value="en/"/>
 		</list>
 		<list key="replacehistory">
 			<item value="确定"/>

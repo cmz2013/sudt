@@ -15,7 +15,7 @@ import cn.sudt.lang.io.CryptoUtils;
 import cn.sudt.lang.io.ObjectStream;
 import cn.sudt.lang.io.StringStream;
 import cn.sudt.ui.common.MessageType;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.validate.annotation.Validations;
 /**
 * 文件导出对话框模板
@@ -35,7 +35,7 @@ public abstract class FileOutputDialog extends FileStreamDialog {
 	protected JTextComponent sureField;
 	
 	public FileOutputDialog(List<?> objs) {
-		super(UiConst.DIALOG_EXPORT);
+		super(UIConst.DIALOG_EXPORT);
 		this.objs = objs;
 	}
 	
@@ -45,7 +45,7 @@ public abstract class FileOutputDialog extends FileStreamDialog {
 		if (!ToolConfig.user.isShowPassword()) {
 			sureLabel = new JLabel(" " + ToolConfig.i18.getProperty(
 					"sudt.password.sure") + " ");
-			sureField = new JPasswordField(UiConst.TEXT_FIELD_COLUMNS - 6);
+			sureField = new JPasswordField(UIConst.TEXT_FIELD_COLUMNS - 6);
 		}
 	}
 

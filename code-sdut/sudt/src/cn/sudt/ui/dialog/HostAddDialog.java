@@ -3,7 +3,7 @@ package cn.sudt.ui.dialog;
 import javax.swing.JOptionPane;
 
 import cn.sudt.config.ToolConfig;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.ui.panel.HostTablePanel;
 /**
 * 添加主机对话框
@@ -19,7 +19,7 @@ public class HostAddDialog extends AbstractHostDialog {
 	private HostTablePanel hostTablePanel;
 
 	public HostAddDialog(HostTablePanel hostTablePanel) {
-		super(UiConst.DIALOG_ADD, 
+		super(UIConst.DIALOG_ADD, 
 			"sudt.host.list.add", hostTablePanel.getTable());
 		this.hostTablePanel = hostTablePanel;
 		userField.setText(ToolConfig.user.getDefaultUser());
@@ -38,7 +38,7 @@ public class HostAddDialog extends AbstractHostDialog {
 	
 	@Override
 	protected String sureExecute() throws Exception {
-		if (UiConst.DIALOG_UPDATE == getDialogType()) {
+		if (UIConst.DIALOG_UPDATE == getDialogType()) {
 			hostTablePanel.getTableUtils().updateRow(
 					hostList, updateRow, 
 					ipField.getText(), 
@@ -64,7 +64,7 @@ public class HostAddDialog extends AbstractHostDialog {
 
 	@Override
 	protected boolean validates() {
-		setDialogType(UiConst.DIALOG_ADD);
+		setDialogType(UIConst.DIALOG_ADD);
 		String ip = ipField.getText().trim();
 		String port = portField.getText().trim();
 		
@@ -80,7 +80,7 @@ public class HostAddDialog extends AbstractHostDialog {
 						JOptionPane.WARNING_MESSAGE);
 				
 				if (JOptionPane.OK_OPTION == option) {
-					setDialogType(UiConst.DIALOG_UPDATE);
+					setDialogType(UIConst.DIALOG_UPDATE);
 					return true;
 				} else {
 					return false;

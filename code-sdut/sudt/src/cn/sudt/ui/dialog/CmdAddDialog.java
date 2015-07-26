@@ -1,7 +1,7 @@
 package cn.sudt.ui.dialog;
 
 import cn.sudt.config.ToolConfig;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.ui.panel.CmdTablePanel;
 /**
  * 添加命令对话框
@@ -14,7 +14,7 @@ public class CmdAddDialog extends AbstractCmdDialog {
 	private CmdTablePanel cmdTablePanel;
 	
 	public CmdAddDialog(CmdTablePanel cmdTablePanel) {
-		super(UiConst.DIALOG_ADD,
+		super(UIConst.DIALOG_ADD,
 			"sudt.command.list.add");
 		this.cmdTablePanel = cmdTablePanel;
 	}

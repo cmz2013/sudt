@@ -9,7 +9,7 @@ import javax.swing.JTabbedPane;
 
 import cn.sudt.config.ToolConfig;
 import cn.sudt.ui.common.IconContainer;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.ui.tab.DeployTabbed;
 import cn.sudt.ui.tab.HelpTabbed;
 /**
@@ -56,10 +56,10 @@ public class MainFrame extends AbstractFrame {
 
 	private void setBackgroundImage() {
 		// 将背景图放在标签里
-		JLabel bgImgLabel = new JLabel(IconContainer.icon_item);
+		JLabel bgImgLabel = new JLabel(IconContainer.icon_background);
 		// 设置背景标签的位置
-		bgImgLabel.setBounds(0, 0, IconContainer.icon_item.getIconWidth(),
-				IconContainer.icon_item.getIconHeight());
+		bgImgLabel.setBounds(0, 0, IconContainer.icon_background.getIconWidth(),
+				IconContainer.icon_background.getIconHeight());
 		// 将背景标签添加到LayeredPane面板里
 		getLayeredPane().add(bgImgLabel, new Integer(Integer.MIN_VALUE));
 	}
@@ -71,7 +71,7 @@ public class MainFrame extends AbstractFrame {
 		mainPanel.addTab(ToolConfig.i18.getProperty("sudt.help.tip"), 
 				new HelpTabbed().getHelpPane());
 		setContentPane(mainPanel);
-		setLocation(UiConst.FRAME_X, UiConst.FRAME_Y);
+		setLocation(UIConst.FRAME_X, UIConst.FRAME_Y);
 		setBackgroundImage();
 	}
 

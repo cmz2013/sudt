@@ -5,7 +5,7 @@ import java.io.File;
 
 import cn.sudt.config.ToolConfig;
 import cn.sudt.ui.common.MessageType;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 /**
 * 文件导入对话框模板
 *
@@ -16,7 +16,7 @@ import cn.sudt.ui.common.UiConst;
 public abstract class FileInputDialog extends FileStreamDialog {
 
 	public FileInputDialog() {
-		super(UiConst.DIALOG_IMPORT);
+		super(UIConst.DIALOG_IMPORT);
 	}
 
 	@Override

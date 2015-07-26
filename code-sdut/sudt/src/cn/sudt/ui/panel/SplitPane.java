@@ -3,7 +3,7 @@ package cn.sudt.ui.panel;
 import javax.swing.JPanel;
 import javax.swing.JSplitPane;
 
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 /**
  * 窗口布局面板
  * 
@@ -19,7 +19,7 @@ public class SplitPane extends JSplitPane {
 	}
 
 	private void setLayout(JPanel northPanel, JPanel southPanel) {
-		setDividerLocation(new Double(UiConst.FRAME_HEIGHT/2.33).intValue());
+		setDividerLocation(new Double(UIConst.FRAME_HEIGHT/2.33).intValue());
 		add(northPanel);
 		add(southPanel);
 		setEnabled(false);

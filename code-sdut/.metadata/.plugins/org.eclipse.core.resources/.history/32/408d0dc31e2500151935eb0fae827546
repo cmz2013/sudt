@@ -1,0 +1,7 @@
+package cn.sudt.ui.panel;
+
+import javax.swing.JTextPane;
+
+public class TextPane extends JTextPane {
+
+}

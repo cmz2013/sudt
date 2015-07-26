@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 import cn.sudt.config.ToolConfig;
 import cn.sudt.deploy.DeployManager;
 import cn.sudt.ui.common.IconContainer;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.ui.frame.ConsoleFrame;
 import cn.sudt.ui.panel.BottomlPanel;
 import cn.sudt.ui.panel.CmdTablePanel;
@@ -157,14 +157,15 @@ public class DeployTabbed {
 	}
 
 	private void setLayout() {
+		deployPanel.setDividerSize(1);
 		hostTablePanel.getTableUtils().hideColumn(hostTablePanel.getTable(), 2, 3);
 		hostTablePanel.getTableUtils().hideColumn(cmdTablePanel.getTable(), 1, 2);
 		hostTablePanel.getTable().getColumnModel(
-				).getColumn(0).setMinWidth(UiConst.TABLE_WIDTH/2);
+				).getColumn(0).setMinWidth(UIConst.TABLE_WIDTH/2);
 		hostTablePanel.getTable().getColumnModel(
-				).getColumn(1).setMinWidth(UiConst.TABLE_WIDTH/2);
+				).getColumn(1).setMinWidth(UIConst.TABLE_WIDTH/2);
 		cmdTablePanel.getTable().getColumnModel(
-				).getColumn(0).setMinWidth(UiConst.TABLE_WIDTH);
+				).getColumn(0).setMinWidth(UIConst.TABLE_WIDTH);
 		
 		cmdTablePanel.add(bottomPanel, BorderLayout.SOUTH);
 	}

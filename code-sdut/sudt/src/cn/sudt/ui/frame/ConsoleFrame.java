@@ -8,7 +8,7 @@ import javax.swing.JTextPane;
 
 import cn.sudt.config.ToolConfig;
 import cn.sudt.lang.io.ConsoleStdout;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 
 /**
  * 控制台（单例模式）
@@ -53,17 +53,17 @@ public class ConsoleFrame extends AbstractFrame {
 	private void setLayout() {
 		JScrollPane scrollPane = new JScrollPane(textPane);
 		add(scrollPane);
-		setLocation(UiConst.FRAME_X + 
-				UiConst.FRAME_WIDTH, UiConst.FRAME_Y);
+		setLocation(UIConst.FRAME_X + 
+				UIConst.FRAME_WIDTH, UIConst.FRAME_Y);
 	}
 
 	public void showConsoleFrame() {
 		try {
 			this.textPane.setText("");
 			this.setLocation(
-					UiConst.FRAME_X + UiConst.FRAME_WIDTH,
-					UiConst.FRAME_Y);
-			this.setSize(UiConst.FRAME_WIDTH, UiConst.FRAME_HEIGHT);
+					UIConst.FRAME_X + UIConst.FRAME_WIDTH,
+					UIConst.FRAME_Y);
+			this.setSize(UIConst.FRAME_WIDTH, UIConst.FRAME_HEIGHT);
 			if (!this.isVisible()) {
 				this.setVisible(true);
 			}

@@ -18,7 +18,7 @@ import javax.swing.text.JTextComponent;
 import org.apache.commons.lang.StringUtils;
 
 import cn.sudt.config.ToolConfig;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.ui.dialog.FileStreamDialog;
 /**
  * 组件工厂 (工厂模式)
@@ -158,7 +158,7 @@ public class SwingFactory {
 	}
 	
 	public static JTextField getTextField() {
-		final JTextField textField = new JTextField(UiConst.TEXT_FIELD_COLUMNS);
+		final JTextField textField = new JTextField(UIConst.TEXT_FIELD_COLUMNS);
 		textField.addMouseListener(new MouseListener() {
 			public void mouseReleased(MouseEvent arg0) { }
 			public void mousePressed(MouseEvent arg0) { }

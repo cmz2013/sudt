@@ -16,7 +16,7 @@ import cn.sudt.config.ToolConfig;
 import cn.sudt.lang.swing.SwingFactory;
 import cn.sudt.shell.LocalShellExcutor;
 import cn.sudt.ui.common.IconContainer;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 /**
  * 部署窗口底层布局面板
  * 
@@ -76,7 +76,7 @@ public class BottomlPanel extends JPanel {
 		busyLabel.setVerticalAlignment(SwingConstants.TOP);
 		add(busyLabel, BorderLayout.CENTER);
 		add(logView, BorderLayout.EAST);
-		setPreferredSize(new Dimension(UiConst.FRAME_WIDTH, 16));
+		setPreferredSize(new Dimension(UIConst.FRAME_WIDTH, 16));
 	}
 	
 	public JMenuItem getLogView() {

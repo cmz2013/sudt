@@ -2,7 +2,7 @@ package cn.sudt.ui.dialog;
 
 import javax.swing.table.DefaultTableModel;
 
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.ui.panel.CmdTablePanel;
 /**
 * 更新命令对话
@@ -16,7 +16,7 @@ public class CmdUpdateDialog extends AbstractCmdDialog {
 	private CmdTablePanel cmdTablePanel;
 	
 	public CmdUpdateDialog(CmdTablePanel cmdTablePanel) {
-		super(UiConst.DIALOG_UPDATE, "sudt.command.list.update");
+		super(UIConst.DIALOG_UPDATE, "sudt.command.list.update");
 		this.cmdTablePanel = cmdTablePanel;
 		initDialogData();
 	}

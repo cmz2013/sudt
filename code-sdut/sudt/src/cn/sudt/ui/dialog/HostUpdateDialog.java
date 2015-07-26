@@ -6,7 +6,7 @@ import javax.swing.table.DefaultTableModel;
 import cn.sudt.config.ToolConfig;
 import cn.sudt.lang.swing.TableUtils;
 import cn.sudt.ui.common.MessageType;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 /**
 * 更新主机对话框
 *
@@ -17,7 +17,7 @@ import cn.sudt.ui.common.UiConst;
 public class HostUpdateDialog extends AbstractHostDialog {
 	
 	public HostUpdateDialog(JTable hostList) {
-		super(UiConst.DIALOG_UPDATE, "sudt.host.list.update", hostList);
+		super(UIConst.DIALOG_UPDATE, "sudt.host.list.update", hostList);
 		initDialogData();
 	}
 

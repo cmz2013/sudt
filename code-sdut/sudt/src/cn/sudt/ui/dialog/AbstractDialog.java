@@ -20,7 +20,7 @@ import cn.sudt.config.ToolConfig;
 import cn.sudt.lang.swing.SwingFactory;
 import cn.sudt.ui.common.IconContainer;
 import cn.sudt.ui.common.MessageType;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.validate.ValidateService;
 /**
  * 对话框模板
@@ -98,16 +98,16 @@ public abstract class AbstractDialog extends JDialog {
 	}
 
 	private void setFailureInfo() {
-		if (UiConst.DIALOG_ADD == dialogType) {
+		if (UIConst.DIALOG_ADD == dialogType) {
 			showInfo(MessageType.error, 
 					ToolConfig.i18.getProperty("sudt.add.fail"));
-		} else if (UiConst.DIALOG_UPDATE == dialogType) {
+		} else if (UIConst.DIALOG_UPDATE == dialogType) {
 			showInfo(MessageType.error, 
 					ToolConfig.i18.getProperty("sudt.update.fail"));
-		} else if (UiConst.DIALOG_IMPORT == dialogType) {
+		} else if (UIConst.DIALOG_IMPORT == dialogType) {
 			showInfo(MessageType.error, 
 					ToolConfig.i18.getProperty("sudt.import.fail"));
-		} else if (UiConst.DIALOG_EXPORT == dialogType) {
+		} else if (UIConst.DIALOG_EXPORT == dialogType) {
 			showInfo(MessageType.error, 
 					ToolConfig.i18.getProperty("sudt.export.fail"));
 		}
@@ -118,16 +118,16 @@ public abstract class AbstractDialog extends JDialog {
 			mes = "";
 		}
 		
-		if (UiConst.DIALOG_ADD == dialogType) {
+		if (UIConst.DIALOG_ADD == dialogType) {
 			showInfo(MessageType.right, 
 					ToolConfig.i18.getProperty("sudt.add.success") + mes);
-		} else if (UiConst.DIALOG_UPDATE == dialogType) {
+		} else if (UIConst.DIALOG_UPDATE == dialogType) {
 			showInfo(MessageType.right, 
 					ToolConfig.i18.getProperty("sudt.update.success") + mes);
-		} else if (UiConst.DIALOG_IMPORT == dialogType) {
+		} else if (UIConst.DIALOG_IMPORT == dialogType) {
 			showInfo(MessageType.right, 
 					ToolConfig.i18.getProperty("sudt.import.success") + mes);
-		} else if (UiConst.DIALOG_EXPORT == dialogType) {
+		} else if (UIConst.DIALOG_EXPORT == dialogType) {
 			showInfo(MessageType.right, 
 					ToolConfig.i18.getProperty("sudt.export.success") + mes);
 		}
@@ -177,7 +177,7 @@ public abstract class AbstractDialog extends JDialog {
 				infoLabel.setText(" ");
 				infoLabel.setIcon(null);
 				Color color = new Color(0,100,0);
-				if (UiConst.DIALOG_ADD == dialogType && 
+				if (UIConst.DIALOG_ADD == dialogType && 
 						color.equals(infoLabel.getForeground())) {
 					
 					if (ToolConfig.user.isCloseAdd()) {
@@ -185,12 +185,12 @@ public abstract class AbstractDialog extends JDialog {
 					} else {
 						clearContext();
 					}
-				} else if ((UiConst.DIALOG_IMPORT == dialogType
-						|| UiConst.DIALOG_EXPORT == dialogType) && 
+				} else if ((UIConst.DIALOG_IMPORT == dialogType
+						|| UIConst.DIALOG_EXPORT == dialogType) && 
 						color.equals(infoLabel.getForeground())) {
 					
 					closeDialog();
-				} else if ((UiConst.DIALOG_UPDATE == dialogType) && 
+				} else if ((UIConst.DIALOG_UPDATE == dialogType) && 
 						color.equals(infoLabel.getForeground()) &&
 					ToolConfig.user.isCloseUpdate()) {
 					closeDialog();
@@ -240,9 +240,9 @@ public abstract class AbstractDialog extends JDialog {
 	}
 
 	private void setLayout() {
-		setIconImage((IconContainer.icon_item.getImage()));
-		setLocation(UiConst.FRAME_X + UiConst.FRAME_WIDTH, 
-				UiConst.FRAME_Y);
+		setIconImage((IconContainer.icon_theme.getImage()));
+		setLocation(UIConst.FRAME_X + UIConst.FRAME_WIDTH, 
+				UIConst.FRAME_Y);
 		setLayout(new BorderLayout());
 		
 		JPanel btnPanel = new JPanel();
@@ -265,8 +265,8 @@ public abstract class AbstractDialog extends JDialog {
 				} catch (Exception e) {
 					
 				}
-				setLocation(UiConst.FRAME_X + 
-						UiConst.FRAME_WIDTH, UiConst.FRAME_Y);
+				setLocation(UIConst.FRAME_X + 
+						UIConst.FRAME_WIDTH, UIConst.FRAME_Y);
 			}
 		}).start();
 	}

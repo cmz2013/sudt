@@ -5,7 +5,7 @@ package cn.sudt.ui.common;
  * @author chongming
  *
  */
-public class UiConst {
+public class UIConst {
 	
 	public static final int FRAME_WIDTH  = 600;
 	public static final int FRAME_HEIGHT = 620;

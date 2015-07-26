@@ -20,7 +20,7 @@ import javax.swing.text.JTextComponent;
 
 import cn.sudt.config.ToolConfig;
 import cn.sudt.lang.swing.SwingFactory;
-import cn.sudt.ui.common.UiConst;
+import cn.sudt.ui.common.UIConst;
 import cn.sudt.validate.annotation.Validations;
 /**
 * 文件导入导出对话框模板
@@ -63,15 +63,15 @@ public abstract class FileStreamDialog extends AbstractDialog {
 	}
 	
 	protected void init() {
-		filePathField.setColumns(UiConst.TEXT_FIELD_COLUMNS - 6);
+		filePathField.setColumns(UIConst.TEXT_FIELD_COLUMNS - 6);
 		if (ToolConfig.user.isShowPassword()) {
 			passwordField = SwingFactory.getTextField();
 			if (passwordField instanceof JTextField) {
 				JTextField textField = (JTextField) passwordField;
-				textField.setColumns(UiConst.TEXT_FIELD_COLUMNS - 6);
+				textField.setColumns(UIConst.TEXT_FIELD_COLUMNS - 6);
 			}
 		} else {
-			passwordField = new JPasswordField(UiConst.TEXT_FIELD_COLUMNS - 6);
+			passwordField = new JPasswordField(UIConst.TEXT_FIELD_COLUMNS - 6);
 		}
 		filePathField.setEditable(false);
 	}
@@ -187,7 +187,7 @@ public abstract class FileStreamDialog extends AbstractDialog {
 			@Override
 			public void actionPerformed(ActionEvent actionevent) {
 				int option = JFileChooser.CANCEL_OPTION;
-				if (UiConst.DIALOG_IMPORT == getDialogType()) {
+				if (UIConst.DIALOG_IMPORT == getDialogType()) {
 					option = fileChooser.showOpenDialog(getDialog());
 				} else {
 					option = fileChooser.showSaveDialog(getDialog());
