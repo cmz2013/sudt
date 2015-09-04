@@ -20,7 +20,7 @@
 	 displayPassword:Password box shows the password
 	 defaultUser:The host user name
 	-->
-	<userConfig language=""
+	<userConfig language="en"
 				defaultUser="root"
 				defaultPort="22"
 				closeUpdate="true"
